@@ -1,0 +1,175 @@
+[
+  {
+    "id": "linkyQueueClock",
+    "name": "[linky] Fila - relógio (tick de hora em hora)",
+    "active": false,
+    "nodes": [
+      {
+        "parameters": {
+          "rule": {
+            "interval": [
+              {
+                "field": "cronExpression",
+                "expression": "0 * * * *"
+              }
+            ]
+          }
+        },
+        "name": "A cada hora",
+        "type": "n8n-nodes-base.scheduleTrigger",
+        "typeVersion": 1.2,
+        "position": [
+          0,
+          0
+        ],
+        "id": "20659327-431f-5e02-9d72-05a58ae0aac7"
+      },
+      {
+        "parameters": {},
+        "name": "Manual",
+        "type": "n8n-nodes-base.manualTrigger",
+        "typeVersion": 1,
+        "position": [
+          0,
+          200
+        ],
+        "id": "3ba63770-d856-5f86-8cfd-c9313b1c689f"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "http://linky-agents:8080/tick",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {}
+        },
+        "name": "Tick",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          240,
+          100
+        ],
+        "id": "1f3dd5af-4c62-5137-b709-14460965aec2",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "conditions": {
+            "options": {
+              "caseSensitive": true,
+              "leftValue": "",
+              "typeValidation": "strict",
+              "version": 2
+            },
+            "conditions": [
+              {
+                "id": "96faf897-1a2d-5a74-97e6-574c23921c3b",
+                "leftValue": "={{ $json.email != null }}",
+                "rightValue": "",
+                "operator": {
+                  "type": "boolean",
+                  "operation": "true",
+                  "singleValue": true
+                }
+              }
+            ],
+            "combinator": "and"
+          },
+          "options": {}
+        },
+        "name": "Tem e-mail?",
+        "type": "n8n-nodes-base.filter",
+        "typeVersion": 2.2,
+        "position": [
+          480,
+          100
+        ],
+        "id": "36dddf7a-7575-517c-ab7f-8aa9b0096c7c"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "https://api.resend.com/emails",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify({ from: 'linky-dev <linky@example.com>', to: ['voce@example.com'], subject: $json.email.subject, html: $json.email.html, text: $json.email.text }) }}",
+          "options": {}
+        },
+        "name": "Enviar e-mail",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          720,
+          100
+        ],
+        "id": "5b49186a-7981-5f76-a877-1729dd586fab",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "RESEND_CREDENTIAL_ID",
+            "name": "Resend linky"
+          }
+        }
+      }
+    ],
+    "connections": {
+      "A cada hora": {
+        "main": [
+          [
+            {
+              "node": "Tick",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Manual": {
+        "main": [
+          [
+            {
+              "node": "Tick",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Tick": {
+        "main": [
+          [
+            {
+              "node": "Tem e-mail?",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Tem e-mail?": {
+        "main": [
+          [
+            {
+              "node": "Enviar e-mail",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "settings": {
+      "executionOrder": "v1",
+      "timezone": "America/Sao_Paulo",
+      "saveManualExecutions": true,
+      "callerPolicy": "workflowsFromSameOwner"
+    }
+  }
+]

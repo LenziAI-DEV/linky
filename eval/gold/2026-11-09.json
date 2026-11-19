@@ -1,0 +1,1200 @@
+{
+  "date": "2026-11-09",
+  "items_file": [
+    "data/items/2026-11-06.jsonl",
+    "data/items/2026-11-07.jsonl",
+    "data/items/2026-11-08.jsonl",
+    "data/items/2026-11-09.jsonl"
+  ],
+  "items_count": 152,
+  "triage": [
+    {
+      "item_id": "0b47ae94b8dc6c92",
+      "relevant": false,
+      "reason": "ferramenta de pentest exposta, nicho de segurança"
+    },
+    {
+      "item_id": "a8fc5de6487f58f9",
+      "relevant": false,
+      "reason": "recurso ou produto de consumo, sem ângulo de negócio"
+    },
+    {
+      "item_id": "f8fe21ba7f368ed1",
+      "relevant": false,
+      "reason": "página de atualizações contínuas, sem fato próprio"
+    },
+    {
+      "item_id": "224c3d5c5f30d73d",
+      "relevant": true
+    },
+    {
+      "item_id": "0a5391d7db4b8ea1",
+      "relevant": false,
+      "reason": "mercado financeiro (IPO), sem ação para empresas"
+    },
+    {
+      "item_id": "84864f21844a6bae",
+      "relevant": false,
+      "reason": "impacto em bibliotecas, sem ângulo de negócio"
+    },
+    {
+      "item_id": "4953102c28c576dd",
+      "relevant": false,
+      "reason": "ciência e saúde, IA marginal"
+    },
+    {
+      "item_id": "2c347d02bc1868b8",
+      "relevant": false,
+      "reason": "estratégia de chips da AMD, foco em consumidor"
+    },
+    {
+      "item_id": "3512dd3708773f4c",
+      "relevant": true
+    },
+    {
+      "item_id": "28a23db326de141c",
+      "relevant": false,
+      "reason": "recurso ou produto de consumo, sem ângulo de negócio"
+    },
+    {
+      "item_id": "f5b174f2123c261f",
+      "relevant": false,
+      "reason": "finanças pessoais, consumo"
+    },
+    {
+      "item_id": "d9d8ed120c50cfe2",
+      "relevant": false,
+      "reason": "rodada de investimento"
+    },
+    {
+      "item_id": "6c7191a9daddd032",
+      "relevant": false,
+      "reason": "mesma notícia do item 54"
+    },
+    {
+      "item_id": "a7e1415152c9585b",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "e0c8b4541e0b5e8b",
+      "relevant": false,
+      "reason": "ensaio de opinião"
+    },
+    {
+      "item_id": "056943dee3efe25c",
+      "relevant": true
+    },
+    {
+      "item_id": "2af345503cb4dc3a",
+      "relevant": false,
+      "reason": "negócio de data center entre big techs, sem ação para empresas"
+    },
+    {
+      "item_id": "d398f6f39f5d2e25",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "d32234f107410245",
+      "relevant": false,
+      "reason": "contrato de nuvem entre big techs"
+    },
+    {
+      "item_id": "7951c5b8003d194f",
+      "relevant": false,
+      "reason": "uso em ciência, fora do território"
+    },
+    {
+      "item_id": "bd95b63d46d959af",
+      "relevant": false,
+      "reason": "mercado de ações"
+    },
+    {
+      "item_id": "a3a6eb3e40301a27",
+      "relevant": false,
+      "reason": "resumo da semana, sem fato próprio"
+    },
+    {
+      "item_id": "fe4fdd184fa7a3ca",
+      "relevant": false,
+      "reason": "recurso ou produto de consumo, sem ângulo de negócio"
+    },
+    {
+      "item_id": "87fb5c758041687e",
+      "relevant": false,
+      "reason": "curiosidade esportiva"
+    },
+    {
+      "item_id": "2821072e049ff485",
+      "relevant": true
+    },
+    {
+      "item_id": "4b429bd7582936e3",
+      "relevant": false,
+      "reason": "podcast, sem fato novo"
+    },
+    {
+      "item_id": "eecad6fef1daea32",
+      "relevant": true
+    },
+    {
+      "item_id": "8743813002d59718",
+      "relevant": false,
+      "reason": "oferta de varejo"
+    },
+    {
+      "item_id": "c085fa304ea0a042",
+      "relevant": false,
+      "reason": "explicativo de produto"
+    },
+    {
+      "item_id": "2de691b14bc66423",
+      "relevant": true
+    },
+    {
+      "item_id": "1ab28dde47a3074f",
+      "relevant": false,
+      "reason": "relato de consumo"
+    },
+    {
+      "item_id": "b521172828d62613",
+      "relevant": false,
+      "reason": "geopolítica de chips"
+    },
+    {
+      "item_id": "23dd2d88c525d063",
+      "relevant": false,
+      "reason": "tutorial de produto"
+    },
+    {
+      "item_id": "8017ce29f6d88c8d",
+      "relevant": false,
+      "reason": "bastidores de laboratório"
+    },
+    {
+      "item_id": "489aab4df8938736",
+      "relevant": false,
+      "reason": "mesma notícia do item 11"
+    },
+    {
+      "item_id": "51a247b5b6ae00e9",
+      "relevant": false,
+      "reason": "política partidária (eleições dos EUA)"
+    },
+    {
+      "item_id": "3b069222ecbd3b59",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "03c46726276b6948",
+      "relevant": false,
+      "reason": "política partidária (eleições dos EUA)"
+    },
+    {
+      "item_id": "28991db0070b49eb",
+      "relevant": false,
+      "reason": "pesquisa de segurança de IA, sem aplicação prática"
+    },
+    {
+      "item_id": "9a720b3178d2f337",
+      "relevant": false,
+      "reason": "relato de consumo"
+    },
+    {
+      "item_id": "7a6ddd94fc2d29aa",
+      "relevant": false,
+      "reason": "explicativo geral, sem fato novo"
+    },
+    {
+      "item_id": "65d87e0777c85032",
+      "relevant": false,
+      "reason": "coluna genérica, sem fato próprio"
+    },
+    {
+      "item_id": "8e787d38836dd26c",
+      "relevant": false,
+      "reason": "lista genérica de ferramentas"
+    },
+    {
+      "item_id": "353e750a91b98493",
+      "relevant": true
+    },
+    {
+      "item_id": "c08233254ab55692",
+      "relevant": false,
+      "reason": "disputa de direitos autorais na música, nicho"
+    },
+    {
+      "item_id": "7cdeffc8e00dfd18",
+      "relevant": false,
+      "reason": "rodada de investimento (repetida de 06/11)"
+    },
+    {
+      "item_id": "98546f3a5df893ed",
+      "relevant": false,
+      "reason": "oferta de varejo"
+    },
+    {
+      "item_id": "1e48e36e35bc4b23",
+      "relevant": false,
+      "reason": "guia de consumo"
+    },
+    {
+      "item_id": "a8b01d083cfd7fd8",
+      "relevant": true
+    },
+    {
+      "item_id": "6bd723b34536cb48",
+      "relevant": false,
+      "reason": "infraestrutura de energia, sem ação para empresas"
+    },
+    {
+      "item_id": "8a86cf9d70b8065c",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "54c06e97d6e0a2b7",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "b9c0dd474c98ba84",
+      "relevant": false,
+      "reason": "rumor (coluna da Bloomberg), sem anúncio"
+    },
+    {
+      "item_id": "d83e874c3e1fa41d",
+      "relevant": false,
+      "reason": "explicativo, sem fato novo"
+    },
+    {
+      "item_id": "37c758acd0a239e9",
+      "relevant": false,
+      "reason": "tutorial de produto"
+    },
+    {
+      "item_id": "e06d5ee46977daa5",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "f0c3cf222719f1ee",
+      "relevant": false,
+      "reason": "oferta de varejo"
+    },
+    {
+      "item_id": "f0be6325bfc4dec9",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "8b18a5361e6d14a9",
+      "relevant": false,
+      "reason": "relato pessoal"
+    },
+    {
+      "item_id": "71c843041955ebc1",
+      "relevant": false,
+      "reason": "experimento técnico pessoal"
+    },
+    {
+      "item_id": "82cf8cd71da779e8",
+      "relevant": false,
+      "reason": "oferta de varejo"
+    },
+    {
+      "item_id": "dab987be36e106a4",
+      "relevant": false,
+      "reason": "ensaio de opinião"
+    },
+    {
+      "item_id": "5320a02b85a3e9e6",
+      "relevant": true
+    },
+    {
+      "item_id": "871120a86632eec8",
+      "relevant": false,
+      "reason": "relatório setorial amplo (saúde)"
+    },
+    {
+      "item_id": "d08694737b722c2b",
+      "relevant": false,
+      "reason": "tutorial técnico ou institucional do fornecedor"
+    },
+    {
+      "item_id": "77625322d4684167",
+      "relevant": false,
+      "reason": "tutorial técnico ou institucional do fornecedor"
+    },
+    {
+      "item_id": "698f0868e7dfb446",
+      "relevant": false,
+      "reason": "tutorial técnico ou institucional do fornecedor"
+    },
+    {
+      "item_id": "eb25380cc5e40adb",
+      "relevant": false,
+      "reason": "tutorial técnico ou institucional do fornecedor"
+    },
+    {
+      "item_id": "177dd03271cc9aec",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "45e8de741ea9e45e",
+      "relevant": false,
+      "reason": "comentário pessoal"
+    },
+    {
+      "item_id": "7a56e2062f93f8c0",
+      "relevant": false,
+      "reason": "comentário pessoal de dev"
+    },
+    {
+      "item_id": "0c85a0832d635b67",
+      "relevant": true
+    },
+    {
+      "item_id": "86c270bf47b54ff7",
+      "relevant": false,
+      "reason": "tutorial técnico ou institucional do fornecedor"
+    },
+    {
+      "item_id": "ad34c832c41eff92",
+      "relevant": false,
+      "reason": "protesto local"
+    },
+    {
+      "item_id": "ae2062297c300167",
+      "relevant": false,
+      "reason": "política e data centers no Texas"
+    },
+    {
+      "item_id": "d87410c6c541a05e",
+      "relevant": false,
+      "reason": "mercado editorial, nicho"
+    },
+    {
+      "item_id": "dfa8d64112c61db3",
+      "relevant": false,
+      "reason": "perfil biográfico"
+    },
+    {
+      "item_id": "ae4e4b1534f65419",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "393a7e27eb097e6a",
+      "relevant": false,
+      "reason": "resumo, sem fato próprio"
+    },
+    {
+      "item_id": "ddea75a5e7558dbd",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "6e07690c27eb09da",
+      "relevant": false,
+      "reason": "pesquisa de robótica, nicho"
+    },
+    {
+      "item_id": "ac8f18750241a65f",
+      "relevant": false,
+      "reason": "dataset de nicho"
+    },
+    {
+      "item_id": "55d059b88c6c576a",
+      "relevant": false,
+      "reason": "pesquisa técnica"
+    },
+    {
+      "item_id": "002b5d6d214abd27",
+      "relevant": true
+    },
+    {
+      "item_id": "d8ba4af02850aa5e",
+      "relevant": false,
+      "reason": "perfil e antitruste"
+    },
+    {
+      "item_id": "1041d0c56d06b40f",
+      "relevant": false,
+      "reason": "conteúdo patrocinado"
+    },
+    {
+      "item_id": "8368c66208828eb0",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "b245671c29a5d9e9",
+      "relevant": true
+    },
+    {
+      "item_id": "ce01790a87837d90",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "712634bb413501e7",
+      "relevant": true
+    },
+    {
+      "item_id": "67522e016102a413",
+      "relevant": true
+    },
+    {
+      "item_id": "1ac532825a7e9509",
+      "relevant": false,
+      "reason": "recurso ou produto de consumo, sem ângulo de negócio"
+    },
+    {
+      "item_id": "1cb56f6d566ffa6e",
+      "relevant": false,
+      "reason": "oferta de varejo"
+    },
+    {
+      "item_id": "01e9d7ee2fbc91ef",
+      "relevant": true
+    },
+    {
+      "item_id": "95ef0123d328859b",
+      "relevant": false,
+      "reason": "mesma notícia do item 27"
+    },
+    {
+      "item_id": "38597062943c6753",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "e8884a0ba45abd76",
+      "relevant": true
+    },
+    {
+      "item_id": "48b9783d0be50413",
+      "relevant": false,
+      "reason": "infraestrutura de energia, sem ação para empresas"
+    },
+    {
+      "item_id": "d65b75d7c2a2b265",
+      "relevant": false,
+      "reason": "app de escrita, consumo"
+    },
+    {
+      "item_id": "cf2829ad74c8e9e2",
+      "relevant": false,
+      "reason": "recurso ou produto de consumo, sem ângulo de negócio"
+    },
+    {
+      "item_id": "3a3ea27b30526f5b",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "5ef96bda92f480d3",
+      "relevant": false,
+      "reason": "política (entrevista de Trump)"
+    },
+    {
+      "item_id": "a1d6a1e656f4ce84",
+      "relevant": true
+    },
+    {
+      "item_id": "717aea7cb5bba68c",
+      "relevant": false,
+      "reason": "podcast"
+    },
+    {
+      "item_id": "a7e59e4f72113c3a",
+      "relevant": false,
+      "reason": "política partidária (eleições dos EUA)"
+    },
+    {
+      "item_id": "7cea50907b9af2dd",
+      "relevant": true
+    },
+    {
+      "item_id": "33a0483307191e73",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "45ece8233a51bf5a",
+      "relevant": true
+    },
+    {
+      "item_id": "d776151a968fd868",
+      "relevant": false,
+      "reason": "curiosidade"
+    },
+    {
+      "item_id": "019e4631915cfaf5",
+      "relevant": true
+    },
+    {
+      "item_id": "ae34da8c8bec62bf",
+      "relevant": false,
+      "reason": "rumor de recurso de consumo"
+    },
+    {
+      "item_id": "c97be5175b0775a7",
+      "relevant": true
+    },
+    {
+      "item_id": "19f78460224b31ad",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "990ebba9a9e5ae4c",
+      "relevant": false,
+      "reason": "rumor (coluna da Bloomberg), sem anúncio"
+    },
+    {
+      "item_id": "bbe72215d124e445",
+      "relevant": true
+    },
+    {
+      "item_id": "edf0062dd2e6a6d9",
+      "relevant": false,
+      "reason": "oferta de varejo"
+    },
+    {
+      "item_id": "63de0f11dcf8f945",
+      "relevant": false,
+      "reason": "oferta de varejo"
+    },
+    {
+      "item_id": "53c40da07ba15400",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "caa9073cefb43725",
+      "relevant": true
+    },
+    {
+      "item_id": "2e34e84f0999c607",
+      "relevant": true
+    },
+    {
+      "item_id": "009b316662ff4c3f",
+      "relevant": false,
+      "reason": "pesquisa, nicho"
+    },
+    {
+      "item_id": "b09ddd384e886e5e",
+      "relevant": false,
+      "reason": "tutorial técnico ou institucional do fornecedor"
+    },
+    {
+      "item_id": "5892c0cb7396af2c",
+      "relevant": false,
+      "reason": "mesma notícia do item 67 (blog do fornecedor)"
+    },
+    {
+      "item_id": "1cff1239c8922e03",
+      "relevant": false,
+      "reason": "tutorial técnico ou institucional do fornecedor"
+    },
+    {
+      "item_id": "a5a8b63aa261f43b",
+      "relevant": false,
+      "reason": "tutorial técnico ou institucional do fornecedor"
+    },
+    {
+      "item_id": "7d1e00daeb767a07",
+      "relevant": true
+    },
+    {
+      "item_id": "a393a08732124dc4",
+      "relevant": false,
+      "reason": "campanha de marca do fornecedor"
+    },
+    {
+      "item_id": "e7b41c563c8e101b",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "a3bc8ca770f44f2d",
+      "relevant": true
+    },
+    {
+      "item_id": "5ef93d9981a0db1c",
+      "relevant": true
+    },
+    {
+      "item_id": "ea9e227012293141",
+      "relevant": true
+    },
+    {
+      "item_id": "0cdd057b459d4c2b",
+      "relevant": false,
+      "reason": "energia e data centers, opinião"
+    },
+    {
+      "item_id": "78f8a6c50015a06f",
+      "relevant": false,
+      "reason": "conteúdo patrocinado, genérico"
+    },
+    {
+      "item_id": "11bb65d3cdbd8429",
+      "relevant": true
+    },
+    {
+      "item_id": "799bf04f09f817aa",
+      "relevant": false,
+      "reason": "ensaio de comportamento"
+    },
+    {
+      "item_id": "547757784dabe698",
+      "relevant": true
+    },
+    {
+      "item_id": "feac579995ab0428",
+      "relevant": false,
+      "reason": "mesma notícia do item 27"
+    },
+    {
+      "item_id": "360cf45138604cba",
+      "relevant": true
+    },
+    {
+      "item_id": "f5f4ac585aa1eb2d",
+      "relevant": false,
+      "reason": "moderação de rede social, consumo"
+    },
+    {
+      "item_id": "da5d5c5979d6db64",
+      "relevant": true
+    },
+    {
+      "item_id": "952d2516af2e9054",
+      "relevant": false,
+      "reason": "bastidores de segurança de laboratório"
+    },
+    {
+      "item_id": "02e9abf47eaf3fa0",
+      "relevant": true
+    },
+    {
+      "item_id": "28bf67cf1684b7b2",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "e105484703996e34",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "bda3011897fcd946",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "44bb6093a440b817",
+      "relevant": false,
+      "reason": "geopolítica"
+    },
+    {
+      "item_id": "cd027b24b17aebaf",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "38ea5b66d2595223",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    },
+    {
+      "item_id": "1cd01b15863e291a",
+      "relevant": false,
+      "reason": "relato pessoal"
+    },
+    {
+      "item_id": "38553d2d084a83c8",
+      "relevant": false,
+      "reason": "rumor de app de consumo"
+    },
+    {
+      "item_id": "1cfc3a14877ad1ed",
+      "relevant": false,
+      "reason": "previsão sem fato"
+    },
+    {
+      "item_id": "0b997c54b59ce4b3",
+      "relevant": false,
+      "reason": "fofoca ou política em torno do CEO da Nvidia (fora do território)"
+    }
+  ],
+  "scored": [
+    {
+      "item_id": "5ef93d9981a0db1c",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 2,
+        "brazil": 2,
+        "positioning": 3,
+        "conversation": 2
+      },
+      "note": "evento: IA com cota e preço por uso (Apple, Google, Samsung)"
+    },
+    {
+      "item_id": "547757784dabe698",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 2,
+        "brazil": 2,
+        "positioning": 3,
+        "conversation": 2
+      },
+      "note": "mesmo evento do item 66, fonte brasileira"
+    },
+    {
+      "item_id": "c97be5175b0775a7",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 2,
+        "brazil": 2,
+        "positioning": 3,
+        "conversation": 2
+      },
+      "note": "mesmo evento; corte do Google em 13/11"
+    },
+    {
+      "item_id": "712634bb413501e7",
+      "scores": {
+        "relevance": 3,
+        "novelty": 2,
+        "evidence": 1,
+        "brazil": 2,
+        "positioning": 3,
+        "conversation": 2
+      },
+      "note": "Samsung: achado em arquivos do app, ainda em teste"
+    },
+    {
+      "item_id": "b245671c29a5d9e9",
+      "eliminated": "só em newsletter agregadora, sem fonte primária"
+    },
+    {
+      "item_id": "0c85a0832d635b67",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 2,
+        "brazil": 3,
+        "positioning": 2,
+        "conversation": 2
+      },
+      "note": "declaração da DiDi ao Tecnoblog; Uber nos resultados"
+    },
+    {
+      "item_id": "360cf45138604cba",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 3,
+        "brazil": 0,
+        "positioning": 2,
+        "conversation": 2
+      },
+      "note": "levantamento da Apiiro"
+    },
+    {
+      "item_id": "7cea50907b9af2dd",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 3,
+        "brazil": 0,
+        "positioning": 2,
+        "conversation": 2
+      },
+      "note": "mesmo evento do item 74 (Ars bloqueia leitura)"
+    },
+    {
+      "item_id": "11bb65d3cdbd8429",
+      "scores": {
+        "relevance": 3,
+        "novelty": 1,
+        "evidence": 2,
+        "brazil": 3,
+        "positioning": 3,
+        "conversation": 2
+      },
+      "note": "pesquisa de agosto retomada em 09/11"
+    },
+    {
+      "item_id": "353e750a91b98493",
+      "scores": {
+        "relevance": 3,
+        "novelty": 2,
+        "evidence": 3,
+        "brazil": 1,
+        "positioning": 2,
+        "conversation": 2
+      },
+      "note": "acusação do DOJ; data da acusação não confirmada"
+    },
+    {
+      "item_id": "ea9e227012293141",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 3,
+        "brazil": 0,
+        "positioning": 2,
+        "conversation": 2
+      },
+      "note": "lançamento; deixei de fora como 'disputa entre modelos', mas Felipe pediu"
+    },
+    {
+      "item_id": "a3bc8ca770f44f2d",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 3,
+        "brazil": 0,
+        "positioning": 2,
+        "conversation": 2
+      },
+      "note": "mesmo evento do item 67 (preço e retenção zero)"
+    },
+    {
+      "item_id": "e8884a0ba45abd76",
+      "scores": {
+        "relevance": 2,
+        "novelty": 3,
+        "evidence": 2,
+        "brazil": 0,
+        "positioning": 2,
+        "conversation": 1
+      },
+      "note": "reserva: modelo barato para volume de agentes"
+    },
+    {
+      "item_id": "45ece8233a51bf5a",
+      "scores": {
+        "relevance": 2,
+        "novelty": 2,
+        "evidence": 1,
+        "brazil": 0,
+        "positioning": 3,
+        "conversation": 2
+      },
+      "note": "HBR: só o resumo (paywall)"
+    },
+    {
+      "item_id": "a8b01d083cfd7fd8",
+      "scores": {
+        "relevance": 2,
+        "novelty": 2,
+        "evidence": 3,
+        "brazil": 1,
+        "positioning": 1,
+        "conversation": 2
+      }
+    },
+    {
+      "item_id": "2de691b14bc66423",
+      "scores": {
+        "relevance": 2,
+        "novelty": 2,
+        "evidence": 2,
+        "brazil": 3,
+        "positioning": 1,
+        "conversation": 2
+      }
+    },
+    {
+      "item_id": "2e34e84f0999c607",
+      "scores": {
+        "relevance": 2,
+        "novelty": 2,
+        "evidence": 2,
+        "brazil": 0,
+        "positioning": 2,
+        "conversation": 1
+      },
+      "note": "caso de cliente no blog da OpenAI"
+    },
+    {
+      "item_id": "5320a02b85a3e9e6",
+      "scores": {
+        "relevance": 2,
+        "novelty": 2,
+        "evidence": 1,
+        "brazil": 0,
+        "positioning": 3,
+        "conversation": 1
+      }
+    },
+    {
+      "item_id": "01e9d7ee2fbc91ef",
+      "scores": {
+        "relevance": 2,
+        "novelty": 2,
+        "evidence": 2,
+        "brazil": 1,
+        "positioning": 1,
+        "conversation": 1
+      }
+    },
+    {
+      "item_id": "eecad6fef1daea32",
+      "scores": {
+        "relevance": 1,
+        "novelty": 3,
+        "evidence": 2,
+        "brazil": 0,
+        "positioning": 1,
+        "conversation": 3
+      }
+    },
+    {
+      "item_id": "019e4631915cfaf5",
+      "scores": {
+        "relevance": 1,
+        "novelty": 2,
+        "evidence": 3,
+        "brazil": 0,
+        "positioning": 1,
+        "conversation": 2
+      }
+    },
+    {
+      "item_id": "2821072e049ff485",
+      "scores": {
+        "relevance": 2,
+        "novelty": 1,
+        "evidence": 0,
+        "brazil": 1,
+        "positioning": 3,
+        "conversation": 1
+      },
+      "note": "coluna de opinião"
+    }
+  ],
+  "cards": [
+    {
+      "rank": 1,
+      "item_ids": [
+        "5ef93d9981a0db1c",
+        "547757784dabe698",
+        "c97be5175b0775a7",
+        "712634bb413501e7"
+      ],
+      "format": "tese",
+      "title": "IA à vontade acabou: big techs passam a cobrar por cota de uso",
+      "what_happened": "A Apple lançou pacotes de uso de IA de US$ 49,99 no Logic Pro, que vão chegar a outros apps profissionais. O Google tira o Gemini Pro do plano AI Plus em 13/11. Arquivos do app indicam que a Samsung testa o Galaxy AI pago (US$ 4,99/mês) com cotas no plano grátis.",
+      "why_it_matters": "IA deixou de ser recurso incluso e virou custo variável por uso. Empresas que espalharam IA sem medir o consumo vão sentir no orçamento.",
+      "approach": "Tese. Gancho: 'o modelo que você usa não é mais a pergunta certa; o quanto ele custa por tarefa é'. Fecha com teto de gasto, modelo pequeno para volume e grande só para decidir. Teto de US$ 0,15/US$ 3 do linky como exemplo opcional.",
+      "sources": [
+        "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+        "https://tecnoblog.net/noticias/apple-comeca-a-cobrar-por-uso-extra-de-ia-em-apps-profissionais",
+        "https://canaltech.com.br/inteligencia-artificial/adeus-ao-gemini-pro-google-corta-nesta-semana-modelos-avancados-do-plano-mais-barato",
+        "https://canaltech.com.br/inteligencia-artificial/samsung-vai-cobrar-por-uso-da-galaxy-ai-no-celular-veja-preco-e-o-que-muda"
+      ]
+    },
+    {
+      "rank": 2,
+      "item_ids": [
+        "0c85a0832d635b67"
+      ],
+      "format": "dado",
+      "title": "Agentes de IA quase não pedem corridas: Uber registrou 4, e a 99 chama de insignificante",
+      "what_happened": "A Uber revelou nos resultados do 3º trimestre que só 4 viagens foram pedidas por agentes de IA externos. O vice-presidente da DiDi (dona da 99) disse ao Tecnoblog, em 09/11, que o número deles é insignificante e questionou o valor agregado.",
+      "why_it_matters": "A economia agêntica ainda não chegou ao consumidor; o valor está na IA dentro do próprio produto, não num agente de fora.",
+      "approach": "Contraponto ao hype: antes de preparar a empresa para ser comprada por agentes, pergunte o que o agente faz melhor que o seu app.",
+      "sources": [
+        "https://tecnoblog.net/noticias/dona-da-99-teve-numero-insignificante-de-corridas-solicitadas-por-agentes-de-ia"
+      ]
+    },
+    {
+      "rank": 3,
+      "item_ids": [
+        "360cf45138604cba",
+        "7cea50907b9af2dd"
+      ],
+      "format": "caso",
+      "title": "Claude Code deixou vazar milhares de senhas no GitHub",
+      "what_happened": "A Apiiro achou 2.539 credenciais reais em 1.994 repositórios públicos, de 63 organizações. O 'Sim, e não pergunte de novo' grava o comando aprovado, com a senha, em .claude/settings.local.json, ignorado só pelo .gitignore global.",
+      "why_it_matters": "Ferramentas de IA para desenvolvimento entraram nas empresas mais rápido que as regras de segurança: é governança, não só dev.",
+      "approach": "Alerta prático com checklist de 3 itens; uma linha técnica para builders; para gestores, quem aprovou a ferramenta e com que regras.",
+      "sources": [
+        "https://canaltech.com.br/seguranca/alerta-para-devs-claude-code-vaza-senhas-e-chaves-de-api-em-massa-no-github",
+        "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github"
+      ]
+    },
+    {
+      "rank": 4,
+      "item_ids": [
+        "11bb65d3cdbd8429"
+      ],
+      "format": "pesquisa",
+      "title": "95% das empresas brasileiras usam IA, mas só 40% escalaram um caso",
+      "what_happened": "Pesquisa da Bain sobre o Brasil, comentada pela MIT Tech Review Brasil em 09/11: 95% usam alguma IA, 40% escalaram ao menos um caso de uso, e nem todas medem o retorno. Onde a IA é prioridade da diretoria, a taxa de escala é 9 vezes maior.",
+      "why_it_matters": "A fase de experimentar acabou; o gargalo é transformar uso em processo e resultado mensurável.",
+      "approach": "Pesquisa: 'todo mundo usa IA, quase ninguém sabe quanto ela rende'. Os 4 degraus: implementar, integrar, escalar, transformar. Novidade baixa (pesquisa de agosto).",
+      "sources": [
+        "https://mittechreview.com.br/pistas-para-escalar-solucoes-com-ia-nas-empresas-brasileiras"
+      ]
+    },
+    {
+      "rank": 5,
+      "item_ids": [
+        "353e750a91b98493"
+      ],
+      "format": "caso",
+      "title": "Deepfake de executivos: golpe de US$ 129 milhões mirou quem aprova pagamentos",
+      "what_happened": "O Departamento de Justiça dos EUA acusou três homens de usar voz e rosto falsos de executivos para desviar ao menos US$ 129 milhões de hospitais, bancos e empresas, sempre mirando quem tinha alçada para transferências.",
+      "why_it_matters": "A defesa é processo: dupla aprovação, confirmação por outro canal, sigilo e urgência tratados como sinal de alerta.",
+      "approach": "Caso: 'o seu processo de aprovação aguenta uma ligação do seu CEO que não é o seu CEO?'",
+      "sources": [
+        "https://olhardigital.com.br/2026/11/08/seguranca/como-criminosos-usaram-rostos-falsos-para-desviar-mais-de-r-700-milhoes"
+      ]
+    }
+  ],
+  "picks": [
+    {
+      "card_rank": null,
+      "item_ids": [
+        "ea9e227012293141",
+        "a3bc8ca770f44f2d"
+      ],
+      "slot": "2026-11-10T18:30:00-03:00",
+      "reason": "Felipe pediu um post sobre os novos modelos do Claude, fora dos cards; terça é exceção autorizada por ele ao calendário",
+      "post": {
+        "draft": "O número mais importante do novo modelo da Anthropic não é a nota no teste. É o custo por tarefa.\n\nNesta segunda, a empresa lançou o Claude Fable 5.2, disponível para todos, e o Mythos 5.2, restrito a organizações aprovadas. O que muda na prática:\n\n• Mesmo resultado, metade do custo: num teste de programação, o Fable 5.2 empatou com a melhor nota do Opus 5.5 gastando cerca de metade por tarefa, segundo a empresa\n• Preço menor: a entrada caiu de US$ 10 para US$ 8 por milhão de tokens, e as respostas ficaram até 30% mais rápidas\n• Dados sob controle: o modelo passou a aceitar retenção zero de dados para clientes corporativos, ainda em beta, um entrave antigo dessas empresas\n\nE um detalhe que diz muito: a própria Anthropic recomenda começar pelo Opus 5.5 e só subir para o Fable quando a tarefa exigir.\n\nOnde isso gera valor:\n\n→ Escolher o modelo pela tarefa, não pela marca: o mais forte para planejar, os menores para o volume\n→ Medir custo por tarefa resolvida, não preço por token. O modelo caro que acerta de primeira pode sair mais barato\n→ Revisar as políticas de dados: retenção zero abre o modelo de ponta para áreas que antes não podiam usá-lo\n\nEssa é a lição de negócio do lançamento: a vantagem não está em usar o modelo mais novo, está em saber quando ele vale o preço.\n\nNa sua empresa, alguém já mede quanto custa cada tarefa que a IA resolve?\n\n#InteligenciaArtificial #AgentesDeIA #Negocios",
+        "final": "O Claude Fable 5.2 muda a pergunta. Não é mais \"a IA consegue?\". É \"quanto tempo ela leva para fazer o que levava dias?\".\n\nA Anthropic lançou o modelo nesta segunda, e ele estreou em 1º lugar entre 74 modelos no índice de inteligência da Artificial Analysis, avaliadora independente. Os feitos divulgados vão muito além de programação:\n\n• Segurança: a Uber rodou uma auditoria de 10 a 12 horas com cerca de 170 agentes, que entregaram relatório, correções e uma proposta de política\n• Ciência: um código de física de materiais ficou 36 vezes mais rápido. Testes de 3,3 horas caíram para menos de 4 minutos\n• Crédito: na Box, o modelo achou a diferença entre salários depositados e saldo do extrato num pedido de empréstimo\n• Trabalho real: em projetos reais de freelancers, a taxa de entrega quase dobrou em relação ao Opus 5.5\n\nE a comunidade já mostra jogos e mundos 3D inteiros feitos a partir de um único pedido.\n\nOnde isso gera valor:\n\n→ Projetos parados por falta de equipe passam a caber num piloto de semanas\n→ Análises de uma semana, como auditorias e relatórios financeiros, viram trabalho de um dia com revisão humana\n→ O gargalo muda: sai a execução, entra saber definir o problema e conferir o resultado\n\nEssa é a lição de negócio: quando a IA dá conta de trabalho de dias, a vantagem fica com quem sabe o que pedir.\n\nQual tarefa da sua área, que hoje leva uma semana, você testaria primeiro num modelo assim?\n\n#InteligenciaArtificial #AgentesDeIA #Negocios",
+        "edit_rounds": 1,
+        "edits": [
+          "10/11, antes de publicar: Felipe pediu outro ângulo. Não 'mesma nota, metade do custo', e sim o salto de capacidade (lançamento viral, 1º no índice da Artificial Analysis, feitos em várias áreas). Legenda e imagem refeitas (v2) e aprovadas sem edição"
+        ],
+        "image_spec": {
+          "chosen": "custom",
+          "script": "tools/t2_art/2026-11-10-claude-fable-v2.py",
+          "png": "2026-11-10-claude-fable-v2.png",
+          "sha256": "33729dc6b063654e9d7e97e041a95af563b98485e7e41da0ff8b95a2aff5e1b9",
+          "replaces": {
+            "script": "tools/t2_art/2026-11-10-claude-fable.py",
+            "sha256": "3ae97347f92368fe19212cb924909efc52e54c733fcebd7f2c51d436dc484747"
+          }
+        },
+        "linkedin_urn": "urn:li:share:7526033523431051264",
+        "published_at": "2026-11-10T21:30:19+00:00"
+      }
+    },
+    {
+      "card_rank": 3,
+      "slot": "2026-11-11T18:30:00-03:00",
+      "post": {
+        "draft": "O vazamento mais perigoso da semana não veio de um ataque. Veio de um \"sim, e não pergunte de novo\".\n\nPesquisadores da Apiiro encontraram 2.539 credenciais reais expostas em 1.994 repositórios públicos do GitHub. A maior parte saiu de arquivos do Claude Code, o assistente de programação da Anthropic. Como aconteceu:\n\n• O atalho: ao aprovar um comando com \"não pergunte de novo\", a ferramenta guarda o comando inteiro, senha incluída, no arquivo .claude/settings.local.json do projeto\n• A brecha: a proteção que impede esse arquivo de ir para o Git vale só na máquina do desenvolvedor. Em projeto compartilhado ou clonado, ele pode acabar publicado\n• O tamanho: 501 das credenciais davam acesso a bancos de dados de produção. Na lista há até sistemas de prontuário médico\n\nA Anthropic diz que estuda incluir um verificador de segredos na ferramenta.\n\nOnde isso exige atenção em qualquer empresa:\n\n→ Assistente de IA para programar é um fornecedor com acesso a sistemas críticos e merece o mesmo crivo\n→ Senha não deve estar no comando: cofre de segredos e chaves de curta duração tornam o vazamento inofensivo\n→ Verificar segredos antes de cada envio de código custa pouco e pega o que a pressa deixa passar\n\nEssa é a lição de negócio: a IA acelerou quem escreve código, mas a governança continua no ritmo antigo. O risco mora nesse intervalo.\n\nNa sua empresa, alguém já definiu o que um assistente de IA pode ver, guardar e executar?\n\n#InteligenciaArtificial #SegurancaDaInformacao #Desenvolvimento",
+        "final": "O vazamento mais perigoso da semana não veio de um ataque. Veio de um \"sim, e não pergunte de novo\".\n\nPesquisadores da Apiiro encontraram 2.539 credenciais reais expostas em 1.994 repositórios públicos do GitHub. A maior parte saiu de arquivos do Claude Code, o assistente de programação da Anthropic. Como aconteceu:\n\n• O atalho: ao aprovar um comando com \"não pergunte de novo\", a ferramenta guarda o comando inteiro, senha incluída, no arquivo .claude/settings.local.json do projeto\n• A brecha: a proteção que impede esse arquivo de ir para o Git vale só na máquina do desenvolvedor. Em projeto compartilhado ou clonado, ele pode acabar publicado\n• O tamanho: 501 das credenciais davam acesso a bancos de dados de produção. Na lista há até sistemas de prontuário médico\n\nA Anthropic diz que estuda incluir um verificador de segredos na ferramenta.\n\nOnde isso exige atenção em qualquer empresa:\n\n→ Assistente de IA para programar é um fornecedor com acesso a sistemas críticos e merece o mesmo crivo\n→ Senha não deve estar no comando: cofre de segredos e chaves de curta duração tornam o vazamento inofensivo\n→ Verificar segredos antes de cada envio de código custa pouco e pega o que a pressa deixa passar\n\nEssa é a lição de negócio: a IA acelerou quem escreve código, mas a governança continua no ritmo antigo. O risco mora nesse intervalo.\n\nNa sua empresa, alguém já definiu o que um assistente de IA pode ver, guardar e executar?\n\n#InteligenciaArtificial #SegurancaDaInformacao #Desenvolvimento",
+        "edit_rounds": 0,
+        "edits": [],
+        "image_spec": {
+          "chosen": "custom",
+          "script": "tools/t2_art/2026-11-11-claude-code-segredos.py",
+          "png": "2026-11-11-claude-code.png",
+          "sha256": "a208d830171ed3b1126b5d0b2ea6e104daea907aca02e25762b1fd2d7b8106f5"
+        },
+        "linkedin_urn": "urn:li:share:7526395912202575872",
+        "published_at": "2026-11-11T21:30:20+00:00"
+      }
+    },
+    {
+      "card_rank": 1,
+      "slot": "2026-11-11T12:30:00-03:00",
+      "reason": "repescagem no lote de 10/11; T2 acelerado (12:30, exceção autorizada)",
+      "post": {
+        "draft": "A fase da IA à vontade está acabando. Três gigantes mostraram isso em poucos dias.\n\nA IA está deixando de ser recurso incluso no preço e virando consumo medido, com cota e conta extra:\n\n• Apple: o Logic Pro passou a vender um pacote de uso de IA por US$ 49,99, que entra quando a cota mensal acaba. O que roda no aparelho continua grátis; o que roda na nuvem, não\n• Google: a partir de 13/11, o plano AI Plus perde os modelos Gemini Pro. Quem quiser o modelo mais capaz precisa subir para planos a partir de R$ 96,99 por mês\n• Samsung: arquivos do app indicam que a empresa testa um Galaxy AI pago, de US$ 4,99 por mês, com cotas no plano grátis\n\nO motivo é simples: cada resposta de um modelo grande custa computação, e alguém paga essa conta.\n\nOnde isso gera valor:\n\n→ Tratar IA como custo variável no orçamento, com teto por área, e não como licença fixa\n→ Usar o modelo menor para o volume e reservar o grande para o que exige decisão\n→ Medir o custo por tarefa resolvida antes de espalhar a ferramenta pela empresa\n\nEssa é a lição de negócio: a IA ficou barata para testar e cara para usar sem controle. Quem mede o consumo agora negocia melhor depois.\n\nNa sua empresa, alguém sabe quanto a IA custa por mês, e por tarefa?\n\n#InteligenciaArtificial #Negocios #GestaoDeCustos",
+        "final": "A fase da IA à vontade está acabando. Três gigantes mostraram isso em poucos dias.\n\nA IA está deixando de ser recurso incluso no preço e virando consumo medido, com cota e conta extra:\n\n• Apple: o Logic Pro passou a vender um pacote de uso de IA por US$ 49,99, que entra quando a cota mensal acaba. O que roda no aparelho continua grátis; o que roda na nuvem, não\n• Google: a partir de 13/11, o plano AI Plus perde os modelos Gemini Pro. Quem quiser o modelo mais capaz precisa subir para planos a partir de R$ 96,99 por mês\n• Samsung: arquivos do app indicam que a empresa testa um Galaxy AI pago, de US$ 4,99 por mês, com cotas no plano grátis\n\nO motivo é simples: cada resposta de um modelo grande custa computação, e alguém paga essa conta.\n\nOnde isso gera valor:\n\n→ Tratar IA como custo variável no orçamento, com teto por área, e não como licença fixa\n→ Usar o modelo menor para o volume e reservar o grande para o que exige decisão\n→ Medir o custo por tarefa resolvida antes de espalhar a ferramenta pela empresa\n\nEssa é a lição de negócio: a IA ficou barata para testar e cara para usar sem controle. Quem mede o consumo agora negocia melhor depois.\n\nNa sua empresa, alguém sabe quanto a IA custa por mês, e por tarefa?\n\n#InteligenciaArtificial #Negocios #GestaoDeCustos",
+        "edit_rounds": 0,
+        "edits": [
+          "texto aprovado sem edição; imagem refeita no tema escuro a pedido de Felipe (alternar claro e escuro) e reaprovada"
+        ],
+        "image_spec": {
+          "chosen": "custom",
+          "script": "tools/t2_art/2026-11-11-cotas-de-ia.py",
+          "png": "2026-11-11-cotas-de-ia.png",
+          "sha256": "7eeceabc077c8b8286bfbf2f59bba5632948daea9715cde95a6a4bd23bbdda1d",
+          "theme": "escuro"
+        },
+        "linkedin_urn": "urn:li:share:7526305330113392640",
+        "published_at": "2026-11-11T15:30:23+00:00"
+      }
+    },
+    {
+      "card_rank": 2,
+      "slot": "2026-11-12T12:30:00-03:00",
+      "reason": "repescagem no lote de 10/11; T2 acelerado (12:30, exceção autorizada)",
+      "post": {
+        "draft": "Quatro. Esse foi o total de corridas que agentes de IA de outras empresas pediram na Uber, segundo a própria empresa.\n\nO número saiu na apresentação de resultados do 3º trimestre. No Uber Eats, os agentes trouxeram cerca de 500 pedidos na semana do Halloween, uma das mais movimentadas do ano. O que isso mostra:\n\n• O consumidor ainda não delegou: abrir o app continua mais rápido do que pedir para um agente pedir por você\n• A plataforma não quer intermediário: o CEO, que já comandou a Expedia, disse que lá dependia \"dos Googles do mundo\" e que não quer voltar a isso\n• O Brasil vai na mesma linha: a dona da 99 disse ao Tecnoblog que o volume de corridas pedidas por agentes é insignificante\n\nOnde isso gera valor:\n\n→ Antes de preparar a empresa para ser \"comprada por agentes\", pergunte o que o agente faz melhor que o seu próprio app\n→ Investir primeiro na IA dentro do produto, onde você controla a experiência e os dados\n→ Tratar agentes como um canal novo: com métrica e teste pequeno, sem apostar a operação nele\n\nEssa é a lição de negócio: o agente de IA vai virar canal, mas ainda não é. Quem confunde tendência com demanda investe antes da hora.\n\nO seu negócio está construindo para o cliente de hoje ou para o agente de amanhã?\n\n#InteligenciaArtificial #AgentesDeIA #Negocios",
+        "final": "Quatro. Esse foi o total de corridas que agentes de IA de outras empresas pediram na @[Uber](urn:li:organization:1815218), segundo a própria empresa.\n\nO número saiu na apresentação de resultados do 3º trimestre. No Uber Eats, os agentes trouxeram cerca de 500 pedidos na semana do Halloween, uma das mais movimentadas do ano. O que isso mostra:\n\n• O consumidor ainda não delegou: abrir o app continua mais rápido do que pedir para um agente pedir por você\n• A plataforma não quer intermediário: o CEO, que já comandou a Expedia, disse que lá dependia \"dos Googles do mundo\" e que não quer voltar a isso\n• O Brasil vai na mesma linha: a dona da 99 disse ao Tecnoblog que o volume de corridas pedidas por agentes é insignificante\n\nOnde isso gera valor:\n\n→ Antes de preparar a empresa para ser \"comprada por agentes\", pergunte o que o agente faz melhor que o seu próprio app\n→ Investir primeiro na IA dentro do produto, onde você controla a experiência e os dados\n→ Tratar agentes como um canal novo: com métrica e teste pequeno, sem apostar a operação nele\n\nEssa é a lição de negócio: o agente de IA vai virar canal, mas ainda não é. Quem confunde tendência com demanda investe antes da hora.\n\nO seu negócio está construindo para o cliente de hoje ou para o agente de amanhã?\n\n#InteligenciaArtificial #AgentesDeIA #Negocios",
+        "edit_rounds": 0,
+        "edits": [
+          "menção às empresas (@[Nome](urn:li:organization:ID), formato little) acrescentada em 11/11 a pedido de Felipe e reaprovada; o resto do texto não mudou",
+          "texto aprovado sem edição; imagem refeita no tema escuro a pedido de Felipe (alternar claro e escuro) e reaprovada"
+        ],
+        "image_spec": {
+          "chosen": "custom",
+          "script": "tools/t2_art/2026-11-12-uber-agentes.py",
+          "png": "2026-11-12-uber-agentes.png",
+          "sha256": "b55335668ead31c280c75c3ebb70f031c7c0999bde303765c27555f18be72939",
+          "theme": "escuro"
+        },
+        "linkedin_urn": "urn:li:share:7526667698181840896",
+        "published_at": "2026-11-12T15:30:18+00:00"
+      }
+    },
+    {
+      "card_rank": 4,
+      "slot": "2026-11-13T12:30:00-03:00",
+      "reason": "repescagem no lote de 10/11; T2 acelerado (12:30, exceção autorizada)",
+      "post": {
+        "draft": "95% das empresas brasileiras já usam IA. Só 40% conseguiram escalar pelo menos um caso de uso.\n\nOs números são de uma pesquisa da Bain & Company com empresas brasileiras, publicada em agosto e comentada nesta semana na MIT Technology Review Brasil. O retrato:\n\n• Prioridade declarada: 86% colocam a IA entre as cinco prioridades estratégicas, e 62% dizem que o programa é liderado pelo CEO ou pela diretoria\n• Motivos: produtividade (56%) lidera, bem à frente de crescimento de vendas (32%) e eficiência de processos (24%)\n• O efeito da liderança: segundo a Bain, quando a IA é prioridade da alta direção, a taxa de escala é nove vezes maior\n• O ponto cego: entre as que escalaram, só uma parte consegue medir o impacto econômico, e menos ainda atribuir o retorno\n\nOnde isso gera valor:\n\n→ Escolher um caso com dono, meta e linha de base antes de abrir dez pilotos\n→ Medir o retorno desde o primeiro dia: tempo economizado, custo evitado ou receita nova\n→ Levar a IA para a pauta da diretoria com números, não com demonstrações\n\nEssa é a lição de negócio: usar IA virou o mínimo. O diferencial está em transformar o uso em processo, e o processo em resultado medido.\n\nNa sua empresa, a IA já tem uma meta com número ou ainda é um conjunto de testes?\n\n#InteligenciaArtificial #Negocios #TransformacaoDigital",
+        "final": "95% das empresas brasileiras já usam IA. Só 40% conseguiram escalar pelo menos um caso de uso.\n\nOs números são de uma pesquisa da @[Bain & Company](urn:li:organization:2114) com empresas brasileiras, publicada em agosto e comentada nesta semana na @[MIT Technology Review Brasil](urn:li:organization:65473714). O retrato:\n\n• Prioridade declarada: 86% colocam a IA entre as cinco prioridades estratégicas, e 62% dizem que o programa é liderado pelo CEO ou pela diretoria\n• Motivos: produtividade (56%) lidera, bem à frente de crescimento de vendas (32%) e eficiência de processos (24%)\n• O efeito da liderança: segundo a Bain, quando a IA é prioridade da alta direção, a taxa de escala é nove vezes maior\n• O ponto cego: entre as que escalaram, só uma parte consegue medir o impacto econômico, e menos ainda atribuir o retorno\n\nOnde isso gera valor:\n\n→ Escolher um caso com dono, meta e linha de base antes de abrir dez pilotos\n→ Medir o retorno desde o primeiro dia: tempo economizado, custo evitado ou receita nova\n→ Levar a IA para a pauta da diretoria com números, não com demonstrações\n\nEssa é a lição de negócio: usar IA virou o mínimo. O diferencial está em transformar o uso em processo, e o processo em resultado medido.\n\nNa sua empresa, a IA já tem uma meta com número ou ainda é um conjunto de testes?\n\n#InteligenciaArtificial #Negocios #TransformacaoDigital",
+        "edit_rounds": 0,
+        "edits": [
+          "menção às empresas (@[Nome](urn:li:organization:ID), formato little) acrescentada em 11/11 a pedido de Felipe e reaprovada; o resto do texto não mudou",
+          "texto e imagem aprovados sem edição na primeira apresentação"
+        ],
+        "image_spec": {
+          "chosen": "custom",
+          "script": "tools/t2_art/2026-11-13-bain-brasil.py",
+          "png": "2026-11-13-bain-brasil.png",
+          "sha256": "e0ee282d895b12e99eeb754d77c9dd7b71307bd0317509f9b23fc3da7ecb753e",
+          "theme": "escuro"
+        },
+        "linkedin_urn": "urn:li:share:7527030088064786432",
+        "published_at": "2026-11-13T15:30:18+00:00"
+      }
+    }
+  ],
+  "human_minutes": null,
+  "notes": [
+    "Lote de recuperação: as pautas de dom 08/11 21:00 e seg 09/11 07:00 não saíram (Felipe sem tempo no domingo). Cards apresentados seg 09/11 ~20:40 BRT, cobrindo itens de 06/11 (depois das 16:30) a 09/11 (até ~20:15).",
+    "Horário de seg 09/11 18:30 perdido: pela regra (horários fixos, 1 por dia) não se recupera.",
+    "Itens de 06/11: só os 21 que chegaram depois da curadoria do dia 1 (os 42 primeiros estão em 2026-11-06.json). O arquivo de 09/11 tinha 88 itens no momento da curadoria.",
+    "Felipe primeiro escolheu card 3 (qua) e card 4 (sex); depois trocou: post sobre os novos modelos do Claude na terça, card 3 na quarta e sexta em aberto até as pautas da semana. Card 4 volta ao banco.",
+    "Calibração: o lançamento do Fable 5.2 teria 27/33 na rubrica (empatado com o card 3), mas eu o descartei por julgamento ('disputa entre modelos', fora do território em voz.md). Felipe quis exatamente esse tema. O critério de território precisa separar lançamento com ângulo de custo e decisão de torcida entre modelos.",
+    "Uma semana de fim de semana dominada pelo caso do CEO da Nvidia (~25 itens): o filtro de fofoca e política funcionou, mas a triagem precisa agrupar por evento para não gastar leitura.",
+    "Fontes: Ars Technica e HBR bloquearam ou cortaram o texto completo; Wired continua bloqueando.",
+    "Arte: o motor mede largura sem kerning (GPOS), e palavras como ATALHO ficam com espaço sobrando na manchete; o rabo do Q invade o bloco da linha de baixo. Contornado trocando a manchete; correção no motor vai para a etapa F.",
+    "Aprovados por Felipe em 09/11 ('Aprovo os dois') sem edições: Fable 5.2 para ter 10/11 18:30 e Claude Code para qua 11/11 18:30, via ops/publish-once.sh (linkyT2D2Fable, linkyT2D2ClaudeCode)."
+  ]
+}

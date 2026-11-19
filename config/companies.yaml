@@ -1,0 +1,22 @@
+# Empresas que o post pode mencionar com @ (voz.md §7). Lido por linky_agents.agents.post.
+#
+# Só a empresa principal do post leva a menção, na primeira vez que aparece, no formato little:
+# @[Nome](urn:li:organization:ID). Empresa fora deste mapa sai com o nome simples.
+#
+# O ID é o da página da empresa no LinkedIn, conferido à mão (os 5 primeiros vêm das menções
+# aprovadas por Felipe nos posts do T2, 11 e 12/11/2026). Para incluir uma empresa: abrir a
+# página dela no LinkedIn, copiar o número da URN da organização e acrescentar aqui.
+# `aliases`: outras formas do nome que o texto pode usar ("Bain" para "Bain & Company").
+
+companies:
+  - name: Uber
+    id: 1815218
+  - name: Adobe
+    id: 1480
+  - name: Bain & Company
+    id: 2114
+    aliases: [Bain]
+  - name: MIT Technology Review Brasil
+    id: 65473714
+  - name: Anthropic
+    id: 74126343

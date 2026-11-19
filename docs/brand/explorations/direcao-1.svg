@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#0D0B14"/>
+  <rect x="0" y="0" width="1080" height="10" fill="#8B5CF6"/>
+  
+  <g transform="translate(72,92)">
+    <rect width="190" height="56" rx="28" fill="#1C1830" stroke="#3B3360" stroke-width="2"/>
+    <text x="95" y="36" text-anchor="middle" font-family="Inter" font-weight="800" font-size="24"
+          fill="#F5F3FF">airbnb</text>
+  </g>
+  <text x="1008" y="128" text-anchor="end" font-family="JetBrains Mono" font-weight="500"
+        font-size="22" fill="#A78BFA" letter-spacing="3">AGENTES DE IA</text>
+
+  <g font-family="Inter" font-weight="800" font-size="92" fill="#FFFFFF" letter-spacing="-2">
+    <text x="72" y="330">Agente genérico</text>
+    <text x="72" y="432">não resolve</text>
+    <text x="72" y="534">problema</text>
+    <text x="72" y="636" fill="#8B5CF6">específico.</text>
+  </g>
+  <text x="72" y="712" font-family="Inter" font-weight="400" font-size="32" fill="#C4B5FD">
+    A aposta da Airbnb para 2027</text>
+
+  <g transform="translate(72,800)">
+    <rect width="420" height="330" rx="24" fill="#15121F" stroke="#2A2540" stroke-width="2"/>
+    <text x="36" y="70" font-family="JetBrains Mono" font-weight="500" font-size="20" fill="#9CA3AF" letter-spacing="2">GENÉRICO</text>
+    <text x="36" y="130" font-family="Inter" font-weight="600" font-size="34" fill="#E5E7EB">Chat que</text>
+    <text x="36" y="174" font-family="Inter" font-weight="600" font-size="34" fill="#E5E7EB">responde em texto</text>
+    <rect x="36" y="220" width="300" height="16" rx="8" fill="#2A2540"/>
+    <rect x="36" y="252" width="240" height="16" rx="8" fill="#2A2540"/>
+    <rect x="36" y="284" width="270" height="16" rx="8" fill="#2A2540"/>
+  </g>
+  <text x="540" y="985" text-anchor="middle" font-family="Inter" font-weight="800" font-size="44" fill="#8B5CF6">→</text>
+  <g transform="translate(588,800)">
+    <rect width="420" height="330" rx="24" fill="#1A1430" stroke="#8B5CF6" stroke-width="3"/>
+    <text x="36" y="70" font-family="JetBrains Mono" font-weight="500" font-size="20" fill="#A78BFA" letter-spacing="2">ESPECIALIZADO</text>
+    <g font-family="Inter" font-weight="600" font-size="28" fill="#F5F3FF">
+      <text x="36" y="132">• Mapas e fotos</text>
+      <text x="36" y="182">• Roteiros e comparativos</text>
+      <text x="36" y="232">• Reembolso e trocas</text>
+      <text x="36" y="282">• Suporte 24h</text>
+    </g>
+  </g>
+  
+  <line x1="72" y1="1218" x2="1008" y2="1218" stroke="#2A2540" stroke-width="2"/>
+  <text x="72" y="1290" font-family="Inter" font-weight="400" font-size="19" fill="#9CA3AF">Fonte: TechCrunch · carta aos acionistas da Airbnb (3º tri) · 05/11/2026</text>
+  
+  <g transform="translate(760,1250)">
+    <rect x="0" y="0" width="60" height="60" rx="14" fill="none" stroke="#8B5CF6" stroke-width="3"/>
+    <text x="30" y="40" text-anchor="middle" font-family="Space Grotesk" font-weight="700"
+          font-size="26" fill="#F5F3FF">FL</text>
+    <text x="76" y="28" font-family="Inter" font-weight="600" font-size="22" fill="#F5F3FF">Felipe Lenzi</text>
+    <text x="76" y="52" font-family="Inter" font-weight="400" font-size="17" fill="#9CA3AF">IA aplicada a negócios</text>
+  </g>
+</svg>

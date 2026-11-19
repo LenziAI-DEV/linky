@@ -1,0 +1,48 @@
+# Serviço linky-agents na VPS. Fica em /opt/linky/compose.yaml (cópia deste arquivo),
+# separado do compose do n8n (/opt/n8n), que não é tocado.
+# Sem porta publicada e sem rota no Traefik: só o n8n alcança, pela rede interna dele,
+# em http://linky-agents:8080. A rede do n8n não tem saída; a `egress` dá a saída para os
+# modelos e as fontes. Ver ops/README.md e docs/adr/0003-servico-http-do-harness.md.
+name: linky
+
+services:
+  linky-agents:
+    image: linky-agents:latest
+    container_name: linky-agents
+    restart: unless-stopped
+    env_file: .env                  # LINKY_SERVICE_TOKEN e as chaves de API dos agentes
+    environment:
+      LINKY_ITEMS_DIR: /items
+    volumes:
+      - linky_data:/data            # editorial.db, alerts.db, ledger/, runs/ e images/
+      - /home/deploy/linky-dev/data/items:/items:ro   # itens do coletor, para o POST /curate
+    networks:
+      - n8n                         # entrada: o n8n chama http://linky-agents:8080
+      - egress                      # saída: APIs dos modelos e texto das fontes (incidente 17/11)
+    mem_limit: 256m
+    memswap_limit: 256m             # sem swap além do limite: estourou, o kernel mata e o Docker reinicia
+    cpus: 0.5
+    pids_limit: 64
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "3"
+
+volumes:
+  linky_data:
+    name: linky_data
+
+networks:
+  n8n:                              # internal: true no compose do n8n, sem saída para a internet
+    external: true
+    name: n8n_n8n-internal
+  egress:                           # bridge só deste serviço: sai para a internet, nada entra
+    name: linky_egress

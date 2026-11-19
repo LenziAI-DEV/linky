@@ -1,0 +1,144 @@
+Felipe Lenzi
+
+AI Builder | Agentic Systems & Automations | Forward Deployed Engineer | Cofounder Liga de Inteligência Artificial da UFSCar
+
+São Carlos, São Paulo
+
+Liga de Inteligência Artificial da UFSCar
+
+Visão geral
+Análise de conteúdos
+Análise de público
+
+Análise da publicação
+
+Exportar
+Publicação no feed
+
+Promova esta publicação para alcançar as pessoas que interessam a você.
+
+Patrocinar
+
+Felipe Lenzi publicou • 1 d
+
+O vazamento mais perigoso da semana não veio de um ataque. Veio de um "sim, e não pergunte de novo".
+
+Pesquisadores da Apiiro encontraram 2.539 credenciais reais expostas em 1.994 repositórios públicos do GitHub. A maior parte saiu de arquivos do Claude Code, o assistente de programação da Anthropic. Como aconteceu:
+
+• O atalho: ao aprovar um comando com "não pergunte de novo", a ferramenta guarda o comando inteiro, senha incluída, no arquivo .claude/settings.local.json do projeto
+
+Na sua empresa, alguém já definiu o que um assistente de IA pode ver, guardar e executar?
+
+#InteligenciaArtificial #SegurancaDaInformacao #Desenvolvimento
+
+Descoberta
+
+207
+
+Impressões
+
+Na rede (seguidores e conexões)
+
+18%
+
+Fora da rede
+
+82%
+
+147
+
+Usuários alcançados
+
+Os usuários que publicam uma vez por semana podem receber até 4 vezes mais visualizações de perfil. Crie outra publicação para manter o ritmo.
+
+Inicie uma publicação
+
+Atividades do perfil
+
+2
+
+Visualizações do perfil a partir desta publicação
+
+0
+
+Seguidores obtidos com esta publicação
+
+Engajamento
+
+1
+
+Reações
+
+Reações
+
+1
+
+Comentários
+
+0
+
+Compartilhamentos
+
+0
+
+Salvamentos
+
+0
+
+Envios no LinkedIn
+
+0
+
+Quem viu seu perfil a partir desta publicação
+
+2 trabalham na empresa Liga de Inteligência Artificial da UFSCar
+
+Ver
+
+Principais dados demográficos
+
+Tudo
+Cargo
+Localidade
+Nível de experiência
+Empresa
+Setor
+Tamanho da empresa
+
+Nível de experiência
+
+Sênior
+
+43%
+
+Localidade
+
+São Paulo e Região
+
+23%
+
+Setor
+
+Atividades dos serviços de tecnologia da informação
+
+19%
+
+Tamanho da empresa
+
+Mais de 10.001 funcionários
+
+17%
+
+Cargo
+
+Engenheiro de software
+
+5%
+
+Análise e ferramentas
+
+Ver todas as análises, inclusive seguidores
+
+Sobre
+
+Acessibilidade

@@ -1,0 +1,795 @@
+[
+  {
+    "id": "linkyPublish",
+    "name": "[linky] Publicação (seg a sex, 18:30)",
+    "active": false,
+    "nodes": [
+      {
+        "parameters": {
+          "rule": {
+            "interval": [
+              {
+                "field": "cronExpression",
+                "expression": "30 18 * * 1-5"
+              }
+            ]
+          }
+        },
+        "name": "Seg a sex 18:30",
+        "type": "n8n-nodes-base.scheduleTrigger",
+        "typeVersion": 1.2,
+        "position": [
+          0,
+          0
+        ],
+        "id": "8c0a6bba-5c07-58a7-85f7-bcdc8ac2fe1a"
+      },
+      {
+        "parameters": {},
+        "name": "Manual",
+        "type": "n8n-nodes-base.manualTrigger",
+        "typeVersion": 1,
+        "position": [
+          0,
+          200
+        ],
+        "id": "7d306a66-7041-5067-8659-757a0f541981"
+      },
+      {
+        "parameters": {
+          "method": "GET",
+          "url": "http://linky-agents:8080/due",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {}
+        },
+        "name": "Due",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          240,
+          100
+        ],
+        "id": "84490a8c-4bf2-5976-889c-393ddb00d9ec",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "fieldToSplitOut": "entries",
+          "options": {}
+        },
+        "name": "Posts",
+        "type": "n8n-nodes-base.splitOut",
+        "typeVersion": 1,
+        "position": [
+          480,
+          100
+        ],
+        "id": "5cf8ecf1-3a38-5e6a-a06b-c9b64c2bc570"
+      },
+      {
+        "parameters": {
+          "maxItems": 1
+        },
+        "name": "Um post",
+        "type": "n8n-nodes-base.limit",
+        "typeVersion": 1,
+        "position": [
+          720,
+          100
+        ],
+        "id": "b0e521ed-d848-5cb0-b41c-94855550e61d"
+      },
+      {
+        "parameters": {
+          "method": "GET",
+          "url": "=http://linky-agents:8080{{ $('Um post').first().json.linkedin.image_url_path }}",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {
+            "response": {
+              "response": {
+                "neverError": true
+              }
+            }
+          }
+        },
+        "name": "Conferir imagem",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          960,
+          100
+        ],
+        "id": "a5ed03b3-9acc-5e00-b450-63da98573e71",
+        "alwaysOutputData": true,
+        "onError": "continueRegularOutput",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "conditions": {
+            "options": {
+              "caseSensitive": true,
+              "leftValue": "",
+              "typeValidation": "strict",
+              "version": 2
+            },
+            "conditions": [
+              {
+                "id": "c713031e-8bdc-5665-8931-4f46a970f9fb",
+                "leftValue": "={{ !!$json.base64 }}",
+                "rightValue": "",
+                "operator": {
+                  "type": "boolean",
+                  "operation": "true",
+                  "singleValue": true
+                }
+              }
+            ],
+            "combinator": "and"
+          },
+          "options": {}
+        },
+        "name": "Imagem existe?",
+        "type": "n8n-nodes-base.if",
+        "typeVersion": 2.2,
+        "position": [
+          1200,
+          100
+        ],
+        "id": "4ba0bf20-5470-5e3b-bae9-87b378d3d24a"
+      },
+      {
+        "parameters": {
+          "conditions": {
+            "options": {
+              "caseSensitive": true,
+              "leftValue": "",
+              "typeValidation": "strict",
+              "version": 2
+            },
+            "conditions": [
+              {
+                "id": "ae6732fc-ddef-597e-bb49-761887baec95",
+                "leftValue": "={{ $('Due').first().json.shadow === false }}",
+                "rightValue": "",
+                "operator": {
+                  "type": "boolean",
+                  "operation": "true",
+                  "singleValue": true
+                }
+              }
+            ],
+            "combinator": "and"
+          },
+          "options": {}
+        },
+        "name": "Publicar de verdade?",
+        "type": "n8n-nodes-base.if",
+        "typeVersion": 2.2,
+        "position": [
+          1440,
+          0
+        ],
+        "id": "b5162577-f435-5bc5-a7d1-da83a663974f"
+      },
+      {
+        "parameters": {
+          "conditions": {
+            "options": {
+              "caseSensitive": true,
+              "leftValue": "",
+              "typeValidation": "strict",
+              "version": 2
+            },
+            "conditions": [
+              {
+                "id": "eccba8a4-8175-5561-8635-e4a5d1dbd398",
+                "leftValue": "={{ $('Due').first().json.shadow === false }}",
+                "rightValue": "",
+                "operator": {
+                  "type": "boolean",
+                  "operation": "true",
+                  "singleValue": true
+                }
+              }
+            ],
+            "combinator": "and"
+          },
+          "options": {}
+        },
+        "name": "Publicar de verdade? (sem imagem)",
+        "type": "n8n-nodes-base.if",
+        "typeVersion": 2.2,
+        "position": [
+          1440,
+          500
+        ],
+        "id": "e706cdb8-98a5-5a70-a6f2-39f1573d0b44"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "https://api.resend.com/emails",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify({ from: 'linky-dev <linky@example.com>', to: ['voce@example.com'], subject: $('Um post').first().json.email.subject, html: $('Um post').first().json.email.html, text: $('Um post').first().json.email.text }) }}",
+          "options": {}
+        },
+        "name": "E-mail sombra",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          1680,
+          300
+        ],
+        "id": "9c52b2eb-0f9b-5aa6-8382-85fdffaa4669",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "RESEND_CREDENTIAL_ID",
+            "name": "Resend linky"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "https://api.resend.com/emails",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify({ from: 'linky-dev <linky@example.com>', to: ['voce@example.com'], subject: $('Um post').first().json.email.subject + ' (IMAGEM NÃO ENCONTRADA no n8n: a publicação real falharia)', html: '<p><b>IMAGEM NÃO ENCONTRADA no n8n: a publicação real falharia</b></p>' + $('Um post').first().json.email.html, text: 'IMAGEM NÃO ENCONTRADA no n8n: a publicação real falharia\\n\\n' + $('Um post').first().json.email.text }) }}",
+          "options": {}
+        },
+        "name": "E-mail sombra (sem imagem)",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          1680,
+          600
+        ],
+        "id": "dd91710a-11b2-58e2-ac16-08705ce1faa1",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "RESEND_CREDENTIAL_ID",
+            "name": "Resend linky"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "={{ 'http://linky-agents:8080/entries/' + $('Um post').first().json.id + '/failed' }}",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {},
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify({ error: 'imagem não encontrada no n8n: ' + $('Um post').first().json.linkedin.image_path }) }}"
+        },
+        "name": "Falhou (sem imagem)",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          1680,
+          450
+        ],
+        "id": "cc21e94e-99a1-5923-80b3-c77fab8413b4",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "={{ 'http://linky-agents:8080/entries/' + $('Um post').first().json.id + '/publishing' }}",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {}
+        },
+        "name": "Marcar em publicação",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          1920,
+          -100
+        ],
+        "id": "014191fe-a413-55a4-80a3-01e5c4678b43",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "method": "GET",
+          "url": "https://api.linkedin.com/v2/userinfo",
+          "authentication": "predefinedCredentialType",
+          "nodeCredentialType": "linkedInOAuth2Api",
+          "options": {}
+        },
+        "name": "Userinfo",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          1440,
+          -100
+        ],
+        "id": "fa1ad83e-8589-5320-a22d-ae089b78402d",
+        "credentials": {
+          "linkedInOAuth2Api": {
+            "id": "kHqOMDnywocOoFHr",
+            "name": "LinkedIn account"
+          }
+        },
+        "onError": "continueErrorOutput"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "https://api.linkedin.com/rest/images?action=initializeUpload",
+          "authentication": "predefinedCredentialType",
+          "nodeCredentialType": "linkedInOAuth2Api",
+          "options": {},
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "LinkedIn-Version",
+                "value": "202610"
+              },
+              {
+                "name": "X-Restli-Protocol-Version",
+                "value": "2.0.0"
+              }
+            ]
+          },
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify({ initializeUploadRequest: { owner: 'urn:li:person:' + $('Userinfo').first().json.sub } }) }}"
+        },
+        "name": "Init upload",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          1680,
+          -100
+        ],
+        "id": "29d25a50-3dff-57e7-a027-661e85e841e8",
+        "credentials": {
+          "linkedInOAuth2Api": {
+            "id": "kHqOMDnywocOoFHr",
+            "name": "LinkedIn account"
+          }
+        },
+        "onError": "continueErrorOutput"
+      },
+      {
+        "parameters": {
+          "operation": "toBinary",
+          "sourceProperty": "base64",
+          "options": {
+            "fileName": "={{ $('Conferir imagem').first().json.name }}",
+            "mimeType": "image/png"
+          }
+        },
+        "name": "Ler imagem",
+        "type": "n8n-nodes-base.convertToFile",
+        "typeVersion": 1.1,
+        "position": [
+          1920,
+          -100
+        ],
+        "id": "11caa4ee-14b1-5b00-96e6-4d1cabf76e11",
+        "onError": "continueErrorOutput"
+      },
+      {
+        "parameters": {
+          "method": "PUT",
+          "url": "={{ $('Init upload').first().json.value.uploadUrl }}",
+          "authentication": "predefinedCredentialType",
+          "nodeCredentialType": "linkedInOAuth2Api",
+          "options": {
+            "response": {
+              "response": {
+                "fullResponse": true,
+                "responseFormat": "text"
+              }
+            }
+          },
+          "sendBody": true,
+          "contentType": "binaryData",
+          "inputDataFieldName": "data"
+        },
+        "name": "Upload",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          2160,
+          -100
+        ],
+        "id": "ef3428ae-ac41-5ae4-b89e-e24c17245917",
+        "credentials": {
+          "linkedInOAuth2Api": {
+            "id": "kHqOMDnywocOoFHr",
+            "name": "LinkedIn account"
+          }
+        },
+        "onError": "continueErrorOutput"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "https://api.linkedin.com/rest/posts",
+          "authentication": "predefinedCredentialType",
+          "nodeCredentialType": "linkedInOAuth2Api",
+          "options": {
+            "response": {
+              "response": {
+                "fullResponse": true,
+                "responseFormat": "text"
+              }
+            }
+          },
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "LinkedIn-Version",
+                "value": "202610"
+              },
+              {
+                "name": "X-Restli-Protocol-Version",
+                "value": "2.0.0"
+              }
+            ]
+          },
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify({ author: 'urn:li:person:' + $('Userinfo').first().json.sub, commentary: $('Um post').first().json.linkedin.commentary, visibility: 'PUBLIC', distribution: { feedDistribution: 'MAIN_FEED', targetEntities: [], thirdPartyDistributionChannels: [] }, content: { media: { id: $('Init upload').first().json.value.image, altText: $('Um post').first().json.linkedin.alt_text } }, lifecycleState: 'PUBLISHED', isReshareDisabledByAuthor: false }) }}"
+        },
+        "name": "Criar post",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          2400,
+          -100
+        ],
+        "id": "5eba0eef-1f19-5874-b05e-9e5e1ef7c63b",
+        "credentials": {
+          "linkedInOAuth2Api": {
+            "id": "kHqOMDnywocOoFHr",
+            "name": "LinkedIn account"
+          }
+        },
+        "onError": "continueErrorOutput"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "={{ 'http://linky-agents:8080/entries/' + $('Um post').first().json.id + '/published' }}",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {},
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify({ urn: ($json.headers && $json.headers['x-restli-id']) || 'sem x-restli-id: conferir no LinkedIn' }) }}"
+        },
+        "name": "Publicado",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          2640,
+          -100
+        ],
+        "id": "88b3b4e8-88dc-5cdc-b68c-3b0f36a88886",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "={{ 'http://linky-agents:8080/entries/' + $('Um post').first().json.id + '/failed' }}",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {},
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify({ error: String(($json.error && ($json.error.message || JSON.stringify($json.error))) || 'falha sem detalhe').slice(0, 500) }) }}"
+        },
+        "name": "Falhou",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          2640,
+          100
+        ],
+        "id": "e367f5be-b4f1-51bc-874d-cc5e8e337436",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "mode": "raw",
+          "jsonOutput": "={{ JSON.stringify({ base64: $('Conferir imagem').first().json.base64 }) }}",
+          "options": {}
+        },
+        "name": "Imagem para upload",
+        "type": "n8n-nodes-base.set",
+        "typeVersion": 3.4,
+        "position": [
+          1800,
+          -100
+        ],
+        "id": "51de75c2-4152-5bb4-8438-9bb9b4044e9a"
+      }
+    ],
+    "connections": {
+      "Seg a sex 18:30": {
+        "main": [
+          [
+            {
+              "node": "Due",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Manual": {
+        "main": [
+          [
+            {
+              "node": "Due",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Due": {
+        "main": [
+          [
+            {
+              "node": "Posts",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Posts": {
+        "main": [
+          [
+            {
+              "node": "Um post",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Um post": {
+        "main": [
+          [
+            {
+              "node": "Conferir imagem",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Conferir imagem": {
+        "main": [
+          [
+            {
+              "node": "Imagem existe?",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Imagem existe?": {
+        "main": [
+          [
+            {
+              "node": "Publicar de verdade?",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Publicar de verdade? (sem imagem)",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Publicar de verdade?": {
+        "main": [
+          [
+            {
+              "node": "Marcar em publicação",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "E-mail sombra",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Publicar de verdade? (sem imagem)": {
+        "main": [
+          [
+            {
+              "node": "Falhou (sem imagem)",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "E-mail sombra (sem imagem)",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Marcar em publicação": {
+        "main": [
+          [
+            {
+              "node": "Userinfo",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Userinfo": {
+        "main": [
+          [
+            {
+              "node": "Init upload",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Falhou",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Init upload": {
+        "main": [
+          [
+            {
+              "node": "Imagem para upload",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Falhou",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Ler imagem": {
+        "main": [
+          [
+            {
+              "node": "Upload",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Falhou",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Upload": {
+        "main": [
+          [
+            {
+              "node": "Criar post",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Falhou",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Criar post": {
+        "main": [
+          [
+            {
+              "node": "Publicado",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Falhou",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Imagem para upload": {
+        "main": [
+          [
+            {
+              "node": "Ler imagem",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "settings": {
+      "executionOrder": "v1",
+      "timezone": "America/Sao_Paulo",
+      "saveManualExecutions": true,
+      "callerPolicy": "workflowsFromSameOwner"
+    }
+  }
+]

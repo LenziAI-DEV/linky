@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+dist/
+
+# Dados coletados e estado de execução (ficam na VPS, não no repositório)
+data/
+
+# Segredos
+.env
+.env.*
+!.env.example
+
+# SO / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

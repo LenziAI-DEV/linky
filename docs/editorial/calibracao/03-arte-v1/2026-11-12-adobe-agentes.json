@@ -1,0 +1,609 @@
+{
+ "alt_text": "Manchete: seu próximo usuário pode não ser humano. Um diagrama liga, à esquerda, agentes de fora como ChatGPT, Claude, Gemini e Copilot, ao centro a Adobe, e à direita as ferramentas Photoshop, Illustrator, Premiere e After Effects. Abaixo, legenda: marketing já funciona dentro dos chatbots; criação e rotina estão em teste.",
+ "theme": "claro",
+ "composition": {
+  "theme": "claro",
+  "background": null,
+  "pieces": [
+   {
+    "name": "empresa e contexto",
+    "elements": [
+     {
+      "id": null,
+      "kind": "text",
+      "x": 72.0,
+      "y": 140.0,
+      "text": "adobe",
+      "font": "body_bold",
+      "size": 46.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": -1.0,
+      "strike": null
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 72.0,
+      "y": 186.0,
+      "text": "Anúncios da Adobe MAX, divulgados em 10/11",
+      "font": "body_medium",
+      "size": 28.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   },
+   {
+    "name": "manchete com destaque",
+    "elements": [
+     {
+      "id": null,
+      "kind": "headline",
+      "markup": "Seu próximo usuário | **pode não ser humano.**",
+      "x": 72.0,
+      "top": 236.0,
+      "max_width": 936.0,
+      "max_height": 200.0,
+      "max_lines": 2,
+      "align": "start",
+      "max_size": null,
+      "plain": "@texto",
+      "accent_box": "violet",
+      "accent_text": "white",
+      "soft_box": "lavender",
+      "soft_text": "ink",
+      "strike": "@texto"
+     }
+    ]
+   },
+   {
+    "name": "diagrama de passagem",
+    "elements": [
+     {
+      "id": "rotulo-esquerda",
+      "kind": "text",
+      "x": 73.0,
+      "y": 494.0,
+      "text": "AGENTES DE FORA",
+      "font": "body_semibold",
+      "size": 19.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 1.5,
+      "strike": null
+     },
+     {
+      "id": "rotulo-direita",
+      "kind": "text",
+      "x": 1007.0,
+      "y": 494.0,
+      "text": "FERRAMENTAS ADOBE",
+      "font": "body_semibold",
+      "size": 19.0,
+      "fill": "@apoio",
+      "anchor": "end",
+      "tracking": 1.5,
+      "strike": null
+     },
+     {
+      "id": "centro",
+      "kind": "rect",
+      "x": 452.0,
+      "y": 520.0,
+      "w": 176.0,
+      "h": 372.0,
+      "fill": "violet",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": "centro-titulo",
+      "kind": "text",
+      "x": 540.0,
+      "y": 730.0,
+      "text": "ADOBE",
+      "font": "headline",
+      "size": 64.0,
+      "fill": "white",
+      "anchor": "middle",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "centro-legenda1",
+      "kind": "text",
+      "x": 540.0,
+      "y": 774.0,
+      "text": "abre as",
+      "font": "body_medium",
+      "size": 24.0,
+      "fill": "white",
+      "anchor": "middle",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "centro-legenda2",
+      "kind": "text",
+      "x": 540.0,
+      "y": 804.0,
+      "text": "ferramentas",
+      "font": "body_medium",
+      "size": 24.0,
+      "fill": "white",
+      "anchor": "middle",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "esquerda1",
+      "kind": "rect",
+      "x": 73.0,
+      "y": 520.0,
+      "w": 278.0,
+      "h": 72.0,
+      "fill": "@superficie",
+      "stroke": "@fio",
+      "stroke_width": 2.0,
+      "radius": 8.0,
+      "dash": null
+     },
+     {
+      "id": "esquerda1-nome",
+      "kind": "text",
+      "x": 101.0,
+      "y": 565.0,
+      "text": "ChatGPT",
+      "font": "body_semibold",
+      "size": 27.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "fio-esquerda1",
+      "kind": "line",
+      "points": [
+       [
+        351.0,
+        556.0
+       ],
+       [
+        452.0,
+        556.0
+       ]
+      ],
+      "stroke": "@texto",
+      "width": 2.0,
+      "cap": "butt"
+     },
+     {
+      "id": "direita1",
+      "kind": "rect",
+      "x": 729.0,
+      "y": 520.0,
+      "w": 278.0,
+      "h": 72.0,
+      "fill": "@superficie",
+      "stroke": "@fio",
+      "stroke_width": 2.0,
+      "radius": 8.0,
+      "dash": null
+     },
+     {
+      "id": "direita1-nome",
+      "kind": "text",
+      "x": 757.0,
+      "y": 565.0,
+      "text": "Photoshop",
+      "font": "body_semibold",
+      "size": 27.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "fio-direita1",
+      "kind": "line",
+      "points": [
+       [
+        628.0,
+        556.0
+       ],
+       [
+        729.0,
+        556.0
+       ]
+      ],
+      "stroke": "@texto",
+      "width": 2.0,
+      "cap": "butt"
+     },
+     {
+      "id": "esquerda2",
+      "kind": "rect",
+      "x": 73.0,
+      "y": 620.0,
+      "w": 278.0,
+      "h": 72.0,
+      "fill": "@superficie",
+      "stroke": "@fio",
+      "stroke_width": 2.0,
+      "radius": 8.0,
+      "dash": null
+     },
+     {
+      "id": "esquerda2-nome",
+      "kind": "text",
+      "x": 101.0,
+      "y": 665.0,
+      "text": "Claude",
+      "font": "body_semibold",
+      "size": 27.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "fio-esquerda2",
+      "kind": "line",
+      "points": [
+       [
+        351.0,
+        656.0
+       ],
+       [
+        452.0,
+        656.0
+       ]
+      ],
+      "stroke": "@texto",
+      "width": 2.0,
+      "cap": "butt"
+     },
+     {
+      "id": "direita2",
+      "kind": "rect",
+      "x": 729.0,
+      "y": 620.0,
+      "w": 278.0,
+      "h": 72.0,
+      "fill": "@superficie",
+      "stroke": "@fio",
+      "stroke_width": 2.0,
+      "radius": 8.0,
+      "dash": null
+     },
+     {
+      "id": "direita2-nome",
+      "kind": "text",
+      "x": 757.0,
+      "y": 665.0,
+      "text": "Illustrator",
+      "font": "body_semibold",
+      "size": 27.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "fio-direita2",
+      "kind": "line",
+      "points": [
+       [
+        628.0,
+        656.0
+       ],
+       [
+        729.0,
+        656.0
+       ]
+      ],
+      "stroke": "@texto",
+      "width": 2.0,
+      "cap": "butt"
+     },
+     {
+      "id": "esquerda3",
+      "kind": "rect",
+      "x": 73.0,
+      "y": 720.0,
+      "w": 278.0,
+      "h": 72.0,
+      "fill": "@superficie",
+      "stroke": "@fio",
+      "stroke_width": 2.0,
+      "radius": 8.0,
+      "dash": null
+     },
+     {
+      "id": "esquerda3-nome",
+      "kind": "text",
+      "x": 101.0,
+      "y": 765.0,
+      "text": "Gemini",
+      "font": "body_semibold",
+      "size": 27.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "fio-esquerda3",
+      "kind": "line",
+      "points": [
+       [
+        351.0,
+        756.0
+       ],
+       [
+        452.0,
+        756.0
+       ]
+      ],
+      "stroke": "@texto",
+      "width": 2.0,
+      "cap": "butt"
+     },
+     {
+      "id": "direita3",
+      "kind": "rect",
+      "x": 729.0,
+      "y": 720.0,
+      "w": 278.0,
+      "h": 72.0,
+      "fill": "@superficie",
+      "stroke": "@fio",
+      "stroke_width": 2.0,
+      "radius": 8.0,
+      "dash": null
+     },
+     {
+      "id": "direita3-nome",
+      "kind": "text",
+      "x": 757.0,
+      "y": 765.0,
+      "text": "Premiere",
+      "font": "body_semibold",
+      "size": 27.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "fio-direita3",
+      "kind": "line",
+      "points": [
+       [
+        628.0,
+        756.0
+       ],
+       [
+        729.0,
+        756.0
+       ]
+      ],
+      "stroke": "@texto",
+      "width": 2.0,
+      "cap": "butt"
+     },
+     {
+      "id": "esquerda4",
+      "kind": "rect",
+      "x": 73.0,
+      "y": 820.0,
+      "w": 278.0,
+      "h": 72.0,
+      "fill": "@superficie",
+      "stroke": "@fio",
+      "stroke_width": 2.0,
+      "radius": 8.0,
+      "dash": null
+     },
+     {
+      "id": "esquerda4-nome",
+      "kind": "text",
+      "x": 101.0,
+      "y": 865.0,
+      "text": "Copilot",
+      "font": "body_semibold",
+      "size": 27.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "fio-esquerda4",
+      "kind": "line",
+      "points": [
+       [
+        351.0,
+        856.0
+       ],
+       [
+        452.0,
+        856.0
+       ]
+      ],
+      "stroke": "@texto",
+      "width": 2.0,
+      "cap": "butt"
+     },
+     {
+      "id": "direita4",
+      "kind": "rect",
+      "x": 729.0,
+      "y": 820.0,
+      "w": 278.0,
+      "h": 72.0,
+      "fill": "@superficie",
+      "stroke": "@fio",
+      "stroke_width": 2.0,
+      "radius": 8.0,
+      "dash": null
+     },
+     {
+      "id": "direita4-nome",
+      "kind": "text",
+      "x": 757.0,
+      "y": 865.0,
+      "text": "After Effects",
+      "font": "body_semibold",
+      "size": 27.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "fio-direita4",
+      "kind": "line",
+      "points": [
+       [
+        628.0,
+        856.0
+       ],
+       [
+        729.0,
+        856.0
+       ]
+      ],
+      "stroke": "@texto",
+      "width": 2.0,
+      "cap": "butt"
+     }
+    ]
+   },
+   {
+    "name": "legenda de status com marcadores",
+    "elements": [
+     {
+      "id": null,
+      "kind": "rect",
+      "x": 72.0,
+      "y": 1010.0,
+      "w": 40.0,
+      "h": 40.0,
+      "fill": "violet",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 128.0,
+      "y": 1039.0,
+      "text": "Já funciona: marketing",
+      "font": "body_semibold",
+      "size": 26.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": null,
+      "kind": "rect",
+      "x": 72.0,
+      "y": 1070.0,
+      "w": 40.0,
+      "h": 40.0,
+      "fill": "lavender_soft",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 128.0,
+      "y": 1099.0,
+      "text": "Em teste: criação e rotina",
+      "font": "body_semibold",
+      "size": 26.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   },
+   {
+    "name": "rodapé com fio",
+    "elements": [
+     {
+      "id": null,
+      "kind": "line",
+      "points": [
+       [
+        72.0,
+        1210.0
+       ],
+       [
+        1008.0,
+        1210.0
+       ]
+      ],
+      "stroke": "@fio",
+      "width": 2.0,
+      "cap": "butt"
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 72.0,
+      "y": 1283.0,
+      "text": "Fonte: TechCrunch (anúncio da Adobe) · 10/11/2026 · integrações ainda em teste",
+      "font": "body",
+      "size": 19.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 1008.0,
+      "y": 1262.0,
+      "text": "Felipe Lenzi",
+      "font": "body_bold",
+      "size": 30.0,
+      "fill": "@texto",
+      "anchor": "end",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "tagline",
+      "kind": "text",
+      "x": 1008.0,
+      "y": 1296.0,
+      "text": "IA aplicada a negócios",
+      "font": "body_medium",
+      "size": 24.0,
+      "fill": "violet",
+      "anchor": "end",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   }
+  ]
+ }
+}

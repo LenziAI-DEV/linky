@@ -1,0 +1,150 @@
+{
+ "summary": {
+  "label": "final",
+  "total_usd": 0.01398,
+  "ok": 4,
+  "ru_maxrss_mb": 71.1,
+  "cgroup_peak_mb": 62.4,
+  "cgroup_current_mb": 38.4
+ },
+ "posts": [
+  {
+   "post": "2026-11-11-claude-code-segredos",
+   "model": "cadeia do models.yaml",
+   "ok": true,
+   "theme": "claro",
+   "alt_text": "Manchete: Claude Code expôs 2.539 senhas reais no GitHub. Duas barras horizontais em escala real comparam 2.539 credenciais expostas com 501 que dão acesso a bancos de dados de produção. Abaixo, 1.994 repositórios públicos com credenciais reais e 63 organizações afetadas.",
+   "cost_usd": 0.00228,
+   "seconds": 14.3,
+   "attempts": [
+    {
+     "model": "anthropic/claude-haiku-5-5",
+     "status": "ok",
+     "cost_usd": 0.00228,
+     "tokens": {
+      "input": 965,
+      "cached_input": 0,
+      "cache_write": 7919,
+      "output": 2379
+     },
+     "rejections": []
+    }
+   ]
+  },
+  {
+   "post": "2026-11-11-cotas-de-ia",
+   "model": "cadeia do models.yaml",
+   "ok": true,
+   "theme": "escuro",
+   "alt_text": "Manchete: a IA à vontade acabou. Um bloco violeta enorme mostra o número 3, as três big techs que passaram a cobrar por uso em poucos dias. Ao lado, três preços: pacote de US$ 49,99 no Logic Pro da Apple, R$ 96,99 por mês como mínimo para o Gemini Pro após o AI Plus perder o modelo no Google, e Galaxy AI pago de US$ 4,99 por mês em teste pela Samsung. Abaixo, a frase: cada resposta de modelo grande custa computação.",
+   "cost_usd": 0.00258,
+   "seconds": 18.6,
+   "attempts": [
+    {
+     "model": "anthropic/claude-haiku-5-5",
+     "status": "ok",
+     "cost_usd": 0.00258,
+     "tokens": {
+      "input": 3238,
+      "cached_input": 15838,
+      "cache_write": 0,
+      "output": 4187
+     },
+     "rejections": []
+    }
+   ]
+  },
+  {
+   "post": "2026-11-12-adobe-agentes",
+   "model": "cadeia do models.yaml",
+   "ok": true,
+   "theme": "claro",
+   "alt_text": "Manchete: seu próximo usuário pode não ser humano. Um diagrama liga, à esquerda, agentes de fora como ChatGPT, Claude, Gemini e Copilot, ao centro a Adobe, e à direita as ferramentas Photoshop, Illustrator, Premiere e After Effects. Abaixo, legenda: marketing já funciona dentro dos chatbots; criação e rotina estão em teste.",
+   "cost_usd": 0.00598,
+   "seconds": 45.9,
+   "attempts": [
+    {
+     "model": "anthropic/claude-haiku-5-5",
+     "status": "ok",
+     "cost_usd": 0.0012,
+     "tokens": {
+      "input": 1023,
+      "cached_input": 7919,
+      "cache_write": 0,
+      "output": 2043
+     },
+     "rejections": []
+    },
+    {
+     "model": "anthropic/claude-haiku-5-5",
+     "status": "ok",
+     "cost_usd": 0.00308,
+     "tokens": {
+      "input": 2002,
+      "cached_input": 7919,
+      "cache_write": 0,
+      "output": 5609
+     },
+     "rejections": [
+      "[colisão] diagrama de passagem/nota: retícula ancorada/halftone1 é desenhado por cima do texto",
+      "[colisão] rodapé com fio/text2: texto sobre a retícula de retícula ancorada/halftone1 (ela só pode ser textura)",
+      "[colisão] rodapé com fio/text3: texto sobre a retícula de retícula ancorada/halftone1 (ela só pode ser textura)",
+      "[colisão] rodapé com fio/tagline: texto sobre a retícula de retícula ancorada/halftone1 (ela só pode ser textura)",
+      "[retícula] retícula ancorada/halftone1: diagrama de passagem/centro é pequena demais para sustentar a retícula: ela precisa cobrir ao menos metade da base (176 de 1080 px)"
+     ]
+    },
+    {
+     "model": "anthropic/claude-haiku-5-5",
+     "status": "ok",
+     "cost_usd": 0.00169,
+     "tokens": {
+      "input": 3041,
+      "cached_input": 7919,
+      "cache_write": 0,
+      "output": 2615
+     },
+     "rejections": [
+      "[margem] manchete: Manchete não cabe no layout: 'O próximo usuário do Photoshop | pode **não ser uma pessoa.**'"
+     ]
+    }
+   ]
+  },
+  {
+   "post": "2026-11-13-bain-brasil",
+   "model": "cadeia do models.yaml",
+   "ok": true,
+   "theme": "escuro",
+   "alt_text": "Manchete: 95% usam IA, mas só 40% escalaram um caso. Duas barras horizontais em escala real comparam 95% das empresas brasileiras que usam alguma IA com 40% que escalaram ao menos um caso de uso. Abaixo, o número 9× indica que a taxa de escala é nove vezes maior quando a IA é prioridade da alta direção.",
+   "cost_usd": 0.00314,
+   "seconds": 25.9,
+   "attempts": [
+    {
+     "model": "anthropic/claude-haiku-5-5",
+     "status": "ok",
+     "cost_usd": 0.0018,
+     "tokens": {
+      "input": 1063,
+      "cached_input": 7919,
+      "cache_write": 0,
+      "output": 3227
+     },
+     "rejections": []
+    },
+    {
+     "model": "anthropic/claude-haiku-5-5",
+     "status": "ok",
+     "cost_usd": 0.00134,
+     "tokens": {
+      "input": 2155,
+      "cached_input": 7919,
+      "cache_write": 0,
+      "output": 2092
+     },
+     "rejections": [
+      "[espaço] 180 px vazios entre a manchete (termina em y 381) e o esquema (começa em y 562): aproxime-os (até 170 px)"
+     ]
+    }
+   ]
+  }
+ ]
+}

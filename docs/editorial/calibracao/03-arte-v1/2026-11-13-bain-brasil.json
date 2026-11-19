@@ -1,0 +1,304 @@
+{
+ "alt_text": "Manchete: 95% usam IA, mas só 40% escalaram um caso. Duas barras horizontais em escala real comparam 95% das empresas brasileiras que usam alguma IA com 40% que escalaram ao menos um caso de uso. Abaixo, o número 9× indica que a taxa de escala é nove vezes maior quando a IA é prioridade da alta direção.",
+ "theme": "escuro",
+ "composition": {
+  "theme": "escuro",
+  "background": null,
+  "pieces": [
+   {
+    "name": "empresa e contexto",
+    "elements": [
+     {
+      "id": null,
+      "kind": "text",
+      "x": 72.0,
+      "y": 140.0,
+      "text": "bain & company",
+      "font": "body_bold",
+      "size": 46.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": -1.0,
+      "strike": null
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 72.0,
+      "y": 186.0,
+      "text": "Pesquisa com empresas brasileiras, comentada em 09/11",
+      "font": "body_medium",
+      "size": 28.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   },
+   {
+    "name": "manchete com destaque",
+    "elements": [
+     {
+      "id": null,
+      "kind": "headline",
+      "markup": "95% usam IA. | Só **40% escalaram** um caso.",
+      "x": 72.0,
+      "top": 236.0,
+      "max_width": 936.0,
+      "max_height": 200.0,
+      "max_lines": 2,
+      "align": "start",
+      "max_size": null,
+      "plain": "@texto",
+      "accent_box": "violet",
+      "accent_text": "white",
+      "soft_box": "lavender",
+      "soft_text": "ink",
+      "strike": "@texto"
+     }
+    ]
+   },
+   {
+    "name": "barras sangrando",
+    "elements": [
+     {
+      "id": "rotulo",
+      "kind": "text",
+      "x": 72.0,
+      "y": 454.0,
+      "text": "EMPRESAS BRASILEIRAS",
+      "font": "body_semibold",
+      "size": 19.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 1.5,
+      "strike": null
+     },
+     {
+      "id": "barra1",
+      "kind": "rect",
+      "x": 0.0,
+      "y": 480.0,
+      "w": 800.0,
+      "h": 100.0,
+      "fill": "lavender",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": "barra1-numero",
+      "kind": "text",
+      "x": 72.0,
+      "y": 546.0,
+      "text": "95%",
+      "font": "headline",
+      "size": 56.0,
+      "fill": "ink",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "barra1-legenda",
+      "kind": "text",
+      "x": 193.0,
+      "y": 541.0,
+      "text": "usam alguma IA",
+      "font": "body_semibold",
+      "size": 28.0,
+      "fill": "ink",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "barra2",
+      "kind": "rect",
+      "x": 0.0,
+      "y": 614.0,
+      "w": 337.0,
+      "h": 100.0,
+      "fill": "violet",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": "barra2-numero",
+      "kind": "text",
+      "x": 365.0,
+      "y": 672.0,
+      "text": "40%",
+      "font": "headline",
+      "size": 56.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "barra2-legenda",
+      "kind": "text",
+      "x": 365.0,
+      "y": 704.0,
+      "text": "escalaram um caso de uso",
+      "font": "body_medium",
+      "size": 24.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   },
+   {
+    "name": "efeito da liderança em número",
+    "elements": [
+     {
+      "id": null,
+      "kind": "rect",
+      "x": 72.0,
+      "y": 880.0,
+      "w": 936.0,
+      "h": 2.0,
+      "fill": "@fio",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": "s9-marcador",
+      "kind": "rect",
+      "x": 72.0,
+      "y": 920.0,
+      "w": 14.0,
+      "h": 14.0,
+      "fill": "violet",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": "s9-numero",
+      "kind": "text",
+      "x": 72.0,
+      "y": 1002.0,
+      "text": "9×",
+      "font": "headline",
+      "size": 50.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "s9-linha1",
+      "kind": "text",
+      "x": 72.0,
+      "y": 1042.0,
+      "text": "mais escala quando a IA é",
+      "font": "body_semibold",
+      "size": 24.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "s9-linha2",
+      "kind": "text",
+      "x": 72.0,
+      "y": 1074.0,
+      "text": "prioridade da alta direção",
+      "font": "body",
+      "size": 22.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   },
+   {
+    "name": "rodapé com fio",
+    "elements": [
+     {
+      "id": null,
+      "kind": "line",
+      "points": [
+       [
+        72.0,
+        1210.0
+       ],
+       [
+        1008.0,
+        1210.0
+       ]
+      ],
+      "stroke": "@fio",
+      "width": 2.0,
+      "cap": "butt"
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 72.0,
+      "y": 1262.0,
+      "text": "Fonte: MIT Technology Review Brasil, sobre pesquisa da Bain",
+      "font": "body",
+      "size": 19.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 72.0,
+      "y": 1290.0,
+      "text": "09/11/2026 · barras em escala real",
+      "font": "body",
+      "size": 19.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 1008.0,
+      "y": 1262.0,
+      "text": "Felipe Lenzi",
+      "font": "body_bold",
+      "size": 30.0,
+      "fill": "@texto",
+      "anchor": "end",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "tagline",
+      "kind": "text",
+      "x": 1008.0,
+      "y": 1296.0,
+      "text": "IA aplicada a negócios",
+      "font": "body_medium",
+      "size": 24.0,
+      "fill": "lavender",
+      "anchor": "end",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,628 @@
+{
+  "date": "2026-11-10",
+  "items_file": [
+    "data/items/2026-11-09.jsonl (coletados depois de 23:40 UTC)",
+    "data/items/2026-11-10.jsonl (até 15:17 UTC)"
+  ],
+  "items_count": 65,
+  "triage": [
+    {
+      "item_id": "952d2516af2e9054",
+      "relevant": false,
+      "reason": "infraestrutura interna de pesquisa da OpenAI, sem ângulo de negócio"
+    },
+    {
+      "item_id": "02e9abf47eaf3fa0",
+      "relevant": true
+    },
+    {
+      "item_id": "28bf67cf1684b7b2",
+      "relevant": false,
+      "reason": "caso Nvidia: fofoca e política, fora do território"
+    },
+    {
+      "item_id": "e105484703996e34",
+      "relevant": false,
+      "reason": "caso Nvidia: fofoca e política, fora do território"
+    },
+    {
+      "item_id": "bda3011897fcd946",
+      "relevant": false,
+      "reason": "caso Nvidia: fofoca e política, fora do território"
+    },
+    {
+      "item_id": "44bb6093a440b817",
+      "relevant": false,
+      "reason": "caso Nvidia: fofoca e política, fora do território"
+    },
+    {
+      "item_id": "cd027b24b17aebaf",
+      "relevant": false,
+      "reason": "caso Nvidia: fofoca e política, fora do território"
+    },
+    {
+      "item_id": "38ea5b66d2595223",
+      "relevant": false,
+      "reason": "caso Nvidia: fofoca e política, fora do território"
+    },
+    {
+      "item_id": "1cd01b15863e291a",
+      "relevant": false,
+      "reason": "curiosidade pessoal de uso, sem ângulo de negócio"
+    },
+    {
+      "item_id": "38553d2d084a83c8",
+      "relevant": false,
+      "reason": "recurso de consumo, sem ângulo de negócio"
+    },
+    {
+      "item_id": "1cfc3a14877ad1ed",
+      "relevant": false,
+      "reason": "previsão sem fato verificável (Musk)"
+    },
+    {
+      "item_id": "0b997c54b59ce4b3",
+      "relevant": false,
+      "reason": "caso Nvidia: fofoca e política, fora do território"
+    },
+    {
+      "item_id": "a22fd9bbbe205692",
+      "relevant": false,
+      "reason": "tutorial de produto AWS"
+    },
+    {
+      "item_id": "4f4fd1b1da1f00aa",
+      "relevant": true
+    },
+    {
+      "item_id": "05e31abb81030e94",
+      "relevant": false,
+      "reason": "opinião de executivo sem fato novo"
+    },
+    {
+      "item_id": "86992df8e81dce28",
+      "relevant": false,
+      "reason": "caso Nvidia: fofoca e política, fora do território"
+    },
+    {
+      "item_id": "0e7f57beb742eb68",
+      "relevant": true
+    },
+    {
+      "item_id": "9a8fde6cfa9ab68c",
+      "relevant": false,
+      "reason": "nota de versão de biblioteca"
+    },
+    {
+      "item_id": "8d0986ffe2daeb7c",
+      "relevant": false,
+      "reason": "caso Nvidia: fofoca e política, fora do território"
+    },
+    {
+      "item_id": "161dca6df20b60db",
+      "relevant": false,
+      "reason": "caso Nvidia: fofoca e política, fora do território"
+    },
+    {
+      "item_id": "f51ad1f22f42c1f9",
+      "relevant": false,
+      "reason": "caso Nvidia: fofoca e política, fora do território"
+    },
+    {
+      "item_id": "fa6a571155181287",
+      "relevant": false,
+      "reason": "varejo de alimentos, IA periférica"
+    },
+    {
+      "item_id": "6b6709b612e5913e",
+      "relevant": true
+    },
+    {
+      "item_id": "5f3963726dbe36e6",
+      "relevant": false,
+      "reason": "recurso técnico de nicho"
+    },
+    {
+      "item_id": "79ac4b66951afb86",
+      "relevant": false,
+      "reason": "opinião sobre política climática, fora do território"
+    },
+    {
+      "item_id": "d297b85445610d9d",
+      "relevant": true
+    },
+    {
+      "item_id": "b61ba34289d3e8db",
+      "relevant": true
+    },
+    {
+      "item_id": "19c160f4485a55c0",
+      "relevant": false,
+      "reason": "dica de prompt; lançamento do Fable já publicado"
+    },
+    {
+      "item_id": "69d4d9d74efa0162",
+      "relevant": false,
+      "reason": "educação, sem fato de negócio"
+    },
+    {
+      "item_id": "0f192bba36f64bb6",
+      "relevant": false,
+      "reason": "atualização incremental de produto"
+    },
+    {
+      "item_id": "ccc979e1da2b25ee",
+      "relevant": false,
+      "reason": "falhas em sites de governo, sem IA"
+    },
+    {
+      "item_id": "e7d9d1552b0e6960",
+      "relevant": true
+    },
+    {
+      "item_id": "cba41f0395d50b9e",
+      "relevant": false,
+      "reason": "lançamento de modelo pequeno de terceiros, pouco contexto"
+    },
+    {
+      "item_id": "7a8b85431c54289a",
+      "relevant": false,
+      "reason": "texto pessoal, fora do território"
+    },
+    {
+      "item_id": "0e9fb0eb84f13acf",
+      "relevant": true
+    },
+    {
+      "item_id": "245880e5ae81a337",
+      "relevant": false,
+      "reason": "jailbreak de chatbots, cultura e não negócio"
+    },
+    {
+      "item_id": "da5a3d0f035fcc89",
+      "relevant": false,
+      "reason": "debate de segurança de IA em opinião, sem fato"
+    },
+    {
+      "item_id": "8b99fa48b8d192a8",
+      "relevant": false,
+      "reason": "música e IA, nicho"
+    },
+    {
+      "item_id": "b3e89a319c0aadb2",
+      "relevant": true
+    },
+    {
+      "item_id": "685a1806c1dc7e2b",
+      "relevant": false,
+      "reason": "resumo diário de notícias, sem fato próprio"
+    },
+    {
+      "item_id": "0f0020abcf733229",
+      "relevant": false,
+      "reason": "uso doméstico de IA, sem ângulo de negócio"
+    },
+    {
+      "item_id": "f3fc54cd1d78c100",
+      "relevant": true
+    },
+    {
+      "item_id": "e192e4f92a704298",
+      "relevant": true
+    },
+    {
+      "item_id": "c979be8e72cc92b8",
+      "relevant": true
+    },
+    {
+      "item_id": "126b111b5d436487",
+      "relevant": true
+    },
+    {
+      "item_id": "5553fe020c93d3c2",
+      "relevant": true
+    },
+    {
+      "item_id": "e086b6a569cdaf26",
+      "relevant": false,
+      "reason": "perfil de startup, sem fato verificável de negócio"
+    },
+    {
+      "item_id": "b5b0ef99e191cd08",
+      "relevant": false,
+      "reason": "recurso de consumo"
+    },
+    {
+      "item_id": "7fc88fbdaa8e9721",
+      "relevant": true
+    },
+    {
+      "item_id": "c039564e4f55eeee",
+      "relevant": true
+    },
+    {
+      "item_id": "499cff9552f92642",
+      "relevant": true
+    },
+    {
+      "item_id": "e313ab2892aad27b",
+      "relevant": false,
+      "reason": "recurso de edição de foto, consumo"
+    },
+    {
+      "item_id": "1d8889c9661cfe54",
+      "relevant": false,
+      "reason": "análise de produto de consumo"
+    },
+    {
+      "item_id": "c86d08502069b5ef",
+      "relevant": true
+    },
+    {
+      "item_id": "7e1488fa308ce7da",
+      "relevant": false,
+      "reason": "guerra e drones, fora do território"
+    },
+    {
+      "item_id": "03d5d319ca911de5",
+      "relevant": false,
+      "reason": "sistema operacional de nicho"
+    },
+    {
+      "item_id": "a0354089107cf7c9",
+      "relevant": false,
+      "reason": "promoção de varejo"
+    },
+    {
+      "item_id": "07b18bb44d8f7722",
+      "relevant": false,
+      "reason": "lançamento do Fable já publicado em 10/11"
+    },
+    {
+      "item_id": "e543579321e343d8",
+      "relevant": false,
+      "reason": "recurso de privacidade de consumo"
+    },
+    {
+      "item_id": "d18447f8b8d50b38",
+      "relevant": false,
+      "reason": "texto genérico sobre IA física, sem fato novo"
+    },
+    {
+      "item_id": "06cbd184eabefedd",
+      "relevant": false,
+      "reason": "recurso de consumo"
+    },
+    {
+      "item_id": "dd19b077b9e0a76e",
+      "relevant": false,
+      "reason": "recurso de consumo"
+    },
+    {
+      "item_id": "5cb01b692b40e5f0",
+      "relevant": false,
+      "reason": "processo eleitoral, fora do território"
+    },
+    {
+      "item_id": "b431187e0a7f0ec9",
+      "relevant": true
+    },
+    {
+      "item_id": "9d2f582bc8f935e2",
+      "relevant": false,
+      "reason": "caso Nvidia: fofoca e política, fora do território"
+    }
+  ],
+  "scored": [
+    {
+      "item_id": "5553fe020c93d3c2",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 3,
+        "brazil": 1,
+        "positioning": 2,
+        "conversation": 3
+      }
+    },
+    {
+      "item_id": "c039564e4f55eeee",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 3,
+        "brazil": 1,
+        "positioning": 2,
+        "conversation": 3
+      },
+      "note": "mesmo fato do IPO (Verge)"
+    },
+    {
+      "item_id": "4f4fd1b1da1f00aa",
+      "scores": {
+        "relevance": 3,
+        "novelty": 2,
+        "evidence": 2,
+        "brazil": 1,
+        "positioning": 2,
+        "conversation": 3
+      },
+      "note": "notícia anterior do mesmo IPO"
+    },
+    {
+      "item_id": "b3e89a319c0aadb2",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 3,
+        "brazil": 1,
+        "positioning": 2,
+        "conversation": 3
+      },
+      "note": "mesmo fato do IPO (Olhar Digital)"
+    },
+    {
+      "item_id": "e7d9d1552b0e6960",
+      "scores": {
+        "relevance": 2,
+        "novelty": 1,
+        "evidence": 3,
+        "brazil": 0,
+        "positioning": 1,
+        "conversation": 2
+      },
+      "note": "de 06/11; vira contexto do card do IPO"
+    },
+    {
+      "item_id": "126b111b5d436487",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 2,
+        "brazil": 1,
+        "positioning": 3,
+        "conversation": 2
+      }
+    },
+    {
+      "item_id": "499cff9552f92642",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 2,
+        "brazil": 1,
+        "positioning": 3,
+        "conversation": 2
+      },
+      "note": "mesmo fato (Verge, bloqueada para leitura)"
+    },
+    {
+      "item_id": "e192e4f92a704298",
+      "scores": {
+        "relevance": 2,
+        "novelty": 2,
+        "evidence": 2,
+        "brazil": 1,
+        "positioning": 2,
+        "conversation": 1
+      },
+      "note": "Adobe nos apps do Google, complemento"
+    },
+    {
+      "item_id": "b431187e0a7f0ec9",
+      "scores": {
+        "relevance": 1,
+        "novelty": 2,
+        "evidence": 2,
+        "brazil": 1,
+        "positioning": 1,
+        "conversation": 1
+      },
+      "note": "Adobe no Fotos do Windows, consumo"
+    },
+    {
+      "item_id": "0e9fb0eb84f13acf",
+      "scores": {
+        "relevance": 2,
+        "novelty": 3,
+        "evidence": 3,
+        "brazil": 1,
+        "positioning": 2,
+        "conversation": 2
+      }
+    },
+    {
+      "item_id": "b61ba34289d3e8db",
+      "scores": {
+        "relevance": 2,
+        "novelty": 3,
+        "evidence": 3,
+        "brazil": 1,
+        "positioning": 2,
+        "conversation": 2
+      },
+      "note": "mesmo fato (Wired)"
+    },
+    {
+      "item_id": "c979be8e72cc92b8",
+      "scores": {
+        "relevance": 2,
+        "novelty": 3,
+        "evidence": 1,
+        "brazil": 0,
+        "positioning": 3,
+        "conversation": 2
+      },
+      "note": "anúncio sem resultado medido"
+    },
+    {
+      "item_id": "6b6709b612e5913e",
+      "scores": {
+        "relevance": 2,
+        "novelty": 3,
+        "evidence": 2,
+        "brazil": 0,
+        "positioning": 1,
+        "conversation": 1
+      }
+    },
+    {
+      "item_id": "c86d08502069b5ef",
+      "scores": {
+        "relevance": 2,
+        "novelty": 3,
+        "evidence": 2,
+        "brazil": 0,
+        "positioning": 1,
+        "conversation": 1
+      },
+      "note": "mesmo fato do Gemini Robotics (Ars)"
+    },
+    {
+      "item_id": "7fc88fbdaa8e9721",
+      "scores": {
+        "relevance": 2,
+        "novelty": 2,
+        "evidence": 2,
+        "brazil": 1,
+        "positioning": 1,
+        "conversation": 2
+      }
+    },
+    {
+      "item_id": "f3fc54cd1d78c100",
+      "eliminated": "fonte primária bloqueada (403) e sem cobertura que confirme os números"
+    },
+    {
+      "item_id": "d297b85445610d9d",
+      "eliminated": "relatório de meses atrás; não é fato do dia"
+    },
+    {
+      "item_id": "0e7f57beb742eb68",
+      "eliminated": "relato anônimo no Reddit, sem fonte verificável"
+    },
+    {
+      "item_id": "02e9abf47eaf3fa0",
+      "eliminated": "caso de cliente publicado pelo fornecedor (publieditorial)"
+    }
+  ],
+  "cards": [
+    {
+      "rank": 1,
+      "item_ids": [
+        "5553fe020c93d3c2",
+        "c039564e4f55eeee",
+        "b3e89a319c0aadb2",
+        "e7d9d1552b0e6960"
+      ],
+      "format": "dado",
+      "title": "Anthropic vai à bolsa valendo US$ 1,4 trilhão",
+      "what_happened": "Faixa de US$ 70 a 78 por ação, estreia na Nasdaq perto de 19/11. O prospecto mostra receita anualizada de US$ 81 bi, prejuízo de US$ 104 bi em 9 meses e US$ 900 bi em compromissos de computação. Em paralelo, o crédito da infraestrutura de IA encarece (título da CoreWeave rende mais de 16%).",
+      "why_it_matters": "É a conta da IA ficando pública: quem compra IA precisa pensar em preço futuro e em dependência de um fornecedor.",
+      "approach": "Dado comentado. Gancho: a empresa de IA mais valiosa do mundo perde mais do que fatura. Terceiro post seguido sobre a Anthropic: deixar para sexta.",
+      "sources": [
+        "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion",
+        "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html"
+      ]
+    },
+    {
+      "rank": 2,
+      "item_ids": [
+        "126b111b5d436487",
+        "499cff9552f92642"
+      ],
+      "format": "lancamento",
+      "title": "Adobe abre Photoshop, Premiere e Illustrator para ChatGPT, Claude e Gemini",
+      "what_happened": "Na Adobe MAX, assistente 'sempre ligado', servidor MCP local que expõe recursos da Creative Cloud a chatbots de fora e o Builder, de protótipos, em beta fechado, no território do Figma.",
+      "why_it_matters": "Software de massa passa a ser feito para ser operado por agentes: afeta marketing, criação e quem vende software.",
+      "approach": "Lançamento. Gancho: o próximo usuário do seu software não é uma pessoa. Cuidado: mesmo dia do post da Uber (agentes de fora ainda não pedem corrida); os ângulos se completam.",
+      "sources": [
+        "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp"
+      ]
+    },
+    {
+      "rank": 3,
+      "item_ids": [
+        "0e9fb0eb84f13acf",
+        "b61ba34289d3e8db"
+      ],
+      "format": "tese",
+      "title": "DeepMind prova em 4 semanas que o código do Signal é seguro",
+      "what_happened": "Os agentes do AlphaProof Code escreveram mais de 6 milhões de linhas de prova em Lean; humanos revisaram cerca de 1%. Dois bugs antigos reinseridos foram apontados.",
+      "why_it_matters": "Garantia formal de segurança, antes trabalho de anos, passa a caber em sistemas críticos (banco, saúde, energia).",
+      "approach": "Tese, na mesma onda do Fable: trabalho de anos feito em semanas.",
+      "sources": [
+        "https://deepmind.google/blog/introducing-alphaproof-code"
+      ]
+    },
+    {
+      "rank": 4,
+      "item_ids": [
+        "c979be8e72cc92b8"
+      ],
+      "format": "lancamento",
+      "title": "Google lança Gemini para hospitais",
+      "what_happened": "Une prontuário, faturamento e autorizações num fluxo, em preview, com HCA, Highmark e Northwell.",
+      "why_it_matters": "Médicos perdem cerca de 28 horas por semana com papelada (estudo Google e Harris, 2024). Evidência fraca: sem resultado medido.",
+      "approach": "Lançamento setorial; pouco forte sem resultados.",
+      "sources": [
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare"
+      ]
+    }
+  ],
+  "picks": [
+    {
+      "card_rank": 2,
+      "slot": "2026-11-12T18:30:00-03:00",
+      "reason": "Felipe aceitou a agenda sugerida (T2 acelerado, 2 posts por dia até sexta)",
+      "post": {
+        "draft": "O próximo usuário do Photoshop pode não ser uma pessoa.\n\nEm poucos dias, a Adobe abriu as suas ferramentas para agentes de IA de outras empresas, nas duas pontas do negócio:\n\n• Criação: em teste, uma integração que deixa agentes de terceiros editarem arquivos do Photoshop, do Illustrator, do Premiere e do After Effects no próprio computador, com camadas e sequências ainda editáveis\n• Marketing: o agente da Adobe para campanhas e jornada do cliente passou a funcionar dentro do ChatGPT, do Claude, do Gemini e do Copilot\n• Rotina: agentes \"sempre ligados\", também em teste, que organizam arquivos e conferem qualidade em segundo plano\n\nMais cedo, mostrei que agentes quase não pedem corridas na Uber. Os dois fatos não se contradizem: o agente ainda não chegou ao consumidor, mas já está entrando pelo trabalho.\n\nOnde isso gera valor:\n\n→ Times de marketing e criação passam a encadear tarefas entre ferramentas com um pedido, sem integração sob medida\n→ Quem vende software precisa decidir quais ações expor para agentes, porque é por aí que o cliente vai chegar\n→ Governança: definir o que um agente pode alterar em arquivos de marca antes de liberar o acesso\n\nEssa é a lição de negócio: software que não conversa com agentes vai virar etapa manual no fluxo de alguém.\n\nO seu time já sabe qual tarefa repetitiva entregaria primeiro para um agente?\n\n#InteligenciaArtificial #AgentesDeIA #Marketing",
+        "final": "O próximo usuário do Photoshop pode não ser uma pessoa.\n\nEm poucos dias, a @[Adobe](urn:li:organization:1480) abriu as suas ferramentas para agentes de IA de outras empresas, nas duas pontas do negócio:\n\n• Criação: em teste, uma integração que deixa agentes de terceiros editarem arquivos do Photoshop, do Illustrator, do Premiere e do After Effects no próprio computador, com camadas e sequências ainda editáveis\n• Marketing: o agente da Adobe para campanhas e jornada do cliente passou a funcionar dentro do ChatGPT, do Claude, do Gemini e do Copilot\n• Rotina: agentes \"sempre ligados\", também em teste, que organizam arquivos e conferem qualidade em segundo plano\n\nMais cedo, mostrei que agentes quase não pedem corridas na Uber. Os dois fatos não se contradizem: o agente ainda não chegou ao consumidor, mas já está entrando pelo trabalho.\n\nOnde isso gera valor:\n\n→ Times de marketing e criação passam a encadear tarefas entre ferramentas com um pedido, sem integração sob medida\n→ Quem vende software precisa decidir quais ações expor para agentes, porque é por aí que o cliente vai chegar\n→ Governança: definir o que um agente pode alterar em arquivos de marca antes de liberar o acesso\n\nEssa é a lição de negócio: software que não conversa com agentes vai virar etapa manual no fluxo de alguém.\n\nO seu time já sabe qual tarefa repetitiva entregaria primeiro para um agente?\n\n#InteligenciaArtificial #AgentesDeIA #Marketing",
+        "edit_rounds": 0,
+        "edits": [
+          "menção às empresas (@[Nome](urn:li:organization:ID), formato little) acrescentada em 11/11 a pedido de Felipe e reaprovada; o resto do texto não mudou",
+          "texto e imagem aprovados sem edição na primeira apresentação"
+        ],
+        "image_spec": {
+          "chosen": "custom",
+          "script": "tools/t2_art/2026-11-12-adobe-agentes.py",
+          "png": "2026-11-12-adobe-agentes.png",
+          "sha256": "a9cada75ee9fdbbd137406d609c7c1bf07474cf563cc58a2afc03a1e4461c9b1",
+          "theme": "claro"
+        },
+        "linkedin_urn": "urn:li:share:7526758290672984065",
+        "published_at": "2026-11-12T21:30:17+00:00"
+      }
+    },
+    {
+      "card_rank": 1,
+      "slot": "2026-11-13T18:30:00-03:00",
+      "reason": "Felipe aceitou a agenda sugerida; IPO por último para não emendar 3 posts da Anthropic",
+      "post": {
+        "draft": "A Anthropic vai à bolsa valendo até US$ 1,4 trilhão e perdendo mais do que fatura.\n\nA dona do Claude definiu a faixa de preço do IPO: de US$ 70 a US$ 78 por ação. A estreia na Nasdaq está prevista para perto de 19/11. O prospecto mostra:\n\n• Crescimento: receita anualizada de US$ 81 bilhões no fim de outubro, e US$ 17 bilhões faturados só no 3º trimestre\n• Prejuízo: US$ 104 bilhões nos nove primeiros meses do ano, para uma receita de US$ 33,2 bilhões\n• Compromissos: cerca de US$ 900 bilhões contratados em computação e infraestrutura\n\nE o mercado de crédito já cobra mais caro de quem financia a infraestrutura de IA: um título da CoreWeave passou a render mais de 16% ao ano.\n\nOnde isso gera valor:\n\n→ Planejar o preço da IA como variável: quem subsidia o uso hoje vai precisar de margem amanhã\n→ Evitar depender de um único fornecedor de modelo, com contratos e arquitetura que permitam trocar\n→ Ler o prospecto: pela primeira vez dá para ver a economia real de um laboratório de ponta\n\nEssa é a lição de negócio: a IA ficou acessível porque alguém está bancando a diferença. Quem constrói em cima dela precisa saber até quando.\n\nNa sua empresa, o custo da IA está no orçamento como despesa fixa ou como risco?\n\n#InteligenciaArtificial #Negocios #Investimentos",
+        "final": "A @[Anthropic](urn:li:organization:74126343) vai à bolsa valendo até US$ 1,4 trilhão e perdendo mais do que fatura.\n\nA dona do Claude definiu a faixa de preço do IPO: de US$ 70 a US$ 78 por ação. A estreia na Nasdaq está prevista para perto de 19/11. O prospecto mostra:\n\n• Crescimento: receita anualizada de US$ 81 bilhões no fim de outubro, e US$ 17 bilhões faturados só no 3º trimestre\n• Prejuízo: US$ 104 bilhões nos nove primeiros meses do ano, para uma receita de US$ 33,2 bilhões\n• Compromissos: cerca de US$ 900 bilhões contratados em computação e infraestrutura\n\nE o mercado de crédito já cobra mais caro de quem financia a infraestrutura de IA: um título da CoreWeave passou a render mais de 16% ao ano.\n\nOnde isso gera valor:\n\n→ Planejar o preço da IA como variável: quem subsidia o uso hoje vai precisar de margem amanhã\n→ Evitar depender de um único fornecedor de modelo, com contratos e arquitetura que permitam trocar\n→ Ler o prospecto: pela primeira vez dá para ver a economia real de um laboratório de ponta\n\nEssa é a lição de negócio: a IA ficou acessível porque alguém está bancando a diferença. Quem constrói em cima dela precisa saber até quando.\n\nNa sua empresa, o custo da IA está no orçamento como despesa fixa ou como risco?\n\n#InteligenciaArtificial #Negocios #Investimentos",
+        "edit_rounds": 0,
+        "edits": [
+          "menção às empresas (@[Nome](urn:li:organization:ID), formato little) acrescentada em 11/11 a pedido de Felipe e reaprovada; o resto do texto não mudou",
+          "texto e imagem aprovados sem edição na primeira apresentação"
+        ],
+        "image_spec": {
+          "chosen": "custom",
+          "script": "tools/t2_art/2026-11-13-anthropic-ipo.py",
+          "png": "2026-11-13-anthropic-ipo.png",
+          "sha256": "1d133d2d6714fac0bec9164a7a63163b45bd8eb5f8ff71a2d82568fd2d6ef8da",
+          "theme": "claro"
+        },
+        "linkedin_urn": "urn:li:share:7527120721320423426",
+        "published_at": "2026-11-13T21:30:27+00:00"
+      }
+    }
+  ],
+  "notes": [
+    "Lote de 10/11 ~15:00: 4 cards novos + 4 da repescagem do lote 2 (as escolhas da repescagem estão em 2026-11-09.json, porque os itens são daquele lote).",
+    "Felipe decidiu não estender o T2: 2 posts por dia (12:30 e 18:30) de qua 11 a sex 13/11, e aceitou a agenda sugerida sem mudar nada.",
+    "Felipe pediu alternar tema claro e escuro entre posts (todos os anteriores eram claros). Cotas e Uber refeitos em grafite antes da publicação.",
+    "Caso Nvidia continua gerando ~13 itens no período: o agrupamento por evento (etapa H) é necessário.",
+    "Várias fontes bloqueiam a leitura (Verge, Tecnoblog, OpenAI 403): evidência depende de cobertura secundária."
+  ]
+}

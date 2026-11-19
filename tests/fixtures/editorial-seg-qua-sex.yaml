@@ -1,0 +1,38 @@
+# Política editorial v1 (seg, qua e sex), congelada para os testes da fila (tests/conftest.py).
+# Os cenários dos testes foram escritos com datas desse calendário; a política real está em
+# config/editorial.yaml (seg a sex desde 16/11/2026).
+# Todos os horários estão no fuso de Brasília.
+
+timezone: America/Sao_Paulo
+
+# Horários fixos de publicação (decisão de Felipe em 06/11/2026)
+slots:
+  weekdays: [mon, wed, fri]
+  time: "18:30"
+  max_per_day: 1
+
+# Quando chegam as pautas (decisão 1)
+proposals:
+  - weekdays: [mon, tue, wed, thu, fri]
+    time: "07:00"
+    cards: 3
+  - weekdays: [sun]            # sábado não recebe nada
+    time: "21:00"
+    cards: 5                   # cobre sexta, sábado e domingo
+    coverage_days: 3
+
+# Validade da pauta, contada a partir da data do fato (dia de publicação da fonte)
+validity:
+  perishable_days: 4           # notícia quente
+  durable_days: 14             # caso, pesquisa, tese
+
+# Prazos da decisão 2 (aprovação do post)
+approval:
+  deadline_before_slot: "02:00"   # aprovar até 16:30 no dia do horário
+  reminder_at: "12:00"            # lembrete no dia do horário, se ainda não aprovado
+  recheck_after_hours: 48         # post aprovado há mais tempo é revalidado antes de sair
+
+# Quando Felipe some do e-mail
+silence:
+  unanswered_batches: 3        # após 3 e-mails de pauta sem resposta, entra em modo silencioso
+  carry_over_cards: 3          # pautas ainda válidas repetidas no e-mail seguinte

@@ -1,0 +1,347 @@
+{
+ "alt_text": "Manchete: Claude Code expôs 2.539 senhas reais no GitHub. Duas barras horizontais em escala real comparam 2.539 credenciais expostas com 501 que dão acesso a bancos de dados de produção. Abaixo, 1.994 repositórios públicos com credenciais reais e 63 organizações afetadas.",
+ "theme": "claro",
+ "composition": {
+  "theme": "claro",
+  "background": null,
+  "pieces": [
+   {
+    "name": "empresa e contexto",
+    "elements": [
+     {
+      "id": null,
+      "kind": "text",
+      "x": 72.0,
+      "y": 140.0,
+      "text": "anthropic",
+      "font": "body_bold",
+      "size": 46.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": -1.0,
+      "strike": null
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 72.0,
+      "y": 186.0,
+      "text": "Pesquisa da Apiiro sobre repositórios públicos",
+      "font": "body_medium",
+      "size": 28.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   },
+   {
+    "name": "manchete com destaque",
+    "elements": [
+     {
+      "id": null,
+      "kind": "headline",
+      "markup": "Claude Code expôs | **2.539 senhas reais** no GitHub",
+      "x": 72.0,
+      "top": 236.0,
+      "max_width": 936.0,
+      "max_height": 200.0,
+      "max_lines": 2,
+      "align": "start",
+      "max_size": null,
+      "plain": "@texto",
+      "accent_box": "violet",
+      "accent_text": "white",
+      "soft_box": "lavender",
+      "soft_text": "ink",
+      "strike": "@texto"
+     }
+    ]
+   },
+   {
+    "name": "barras sangrando",
+    "elements": [
+     {
+      "id": "rotulo",
+      "kind": "text",
+      "x": 72.0,
+      "y": 534.0,
+      "text": "CREDENCIAIS REAIS EM REPOSITÓRIOS PÚBLICOS",
+      "font": "body_semibold",
+      "size": 19.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 1.5,
+      "strike": null
+     },
+     {
+      "id": "barra1",
+      "kind": "rect",
+      "x": 0.0,
+      "y": 560.0,
+      "w": 800.0,
+      "h": 110.0,
+      "fill": "lavender",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": "barra1-numero",
+      "kind": "text",
+      "x": 72.0,
+      "y": 631.0,
+      "text": "2.539",
+      "font": "headline",
+      "size": 56.0,
+      "fill": "ink",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "barra1-legenda",
+      "kind": "text",
+      "x": 214.0,
+      "y": 626.0,
+      "text": "credenciais expostas",
+      "font": "body_semibold",
+      "size": 28.0,
+      "fill": "ink",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "barra2",
+      "kind": "rect",
+      "x": 0.0,
+      "y": 710.0,
+      "w": 158.0,
+      "h": 110.0,
+      "fill": "violet",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": "barra2-numero",
+      "kind": "text",
+      "x": 186.0,
+      "y": 773.0,
+      "text": "501",
+      "font": "headline",
+      "size": 56.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "barra2-legenda",
+      "kind": "text",
+      "x": 186.0,
+      "y": 805.0,
+      "text": "dão acesso a bancos de produção",
+      "font": "body_medium",
+      "size": 24.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   },
+   {
+    "name": "dois números em colunas",
+    "elements": [
+     {
+      "id": "s1-marcador",
+      "kind": "rect",
+      "x": 72.0,
+      "y": 920.0,
+      "w": 14.0,
+      "h": 14.0,
+      "fill": "violet",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": "s1-numero",
+      "kind": "text",
+      "x": 72.0,
+      "y": 1002.0,
+      "text": "1.994",
+      "font": "headline",
+      "size": 50.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "s1-linha1",
+      "kind": "text",
+      "x": 72.0,
+      "y": 1042.0,
+      "text": "repositórios públicos",
+      "font": "body_semibold",
+      "size": 24.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "s1-linha2",
+      "kind": "text",
+      "x": 72.0,
+      "y": 1074.0,
+      "text": "com credenciais reais",
+      "font": "body",
+      "size": 22.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": null,
+      "kind": "line",
+      "points": [
+       [
+        540.0,
+        916.0
+       ],
+       [
+        540.0,
+        1070.0
+       ]
+      ],
+      "stroke": "@fio",
+      "width": 2.0,
+      "cap": "butt"
+     },
+     {
+      "id": "s2-marcador",
+      "kind": "rect",
+      "x": 572.0,
+      "y": 920.0,
+      "w": 14.0,
+      "h": 14.0,
+      "fill": "violet",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": "s2-numero",
+      "kind": "text",
+      "x": 572.0,
+      "y": 1002.0,
+      "text": "63",
+      "font": "headline",
+      "size": 50.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "s2-linha1",
+      "kind": "text",
+      "x": 572.0,
+      "y": 1042.0,
+      "text": "organizações afetadas",
+      "font": "body_semibold",
+      "size": 24.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "s2-linha2",
+      "kind": "text",
+      "x": 572.0,
+      "y": 1074.0,
+      "text": "pelo arquivo exposto",
+      "font": "body",
+      "size": 22.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   },
+   {
+    "name": "rodapé com fio",
+    "elements": [
+     {
+      "id": null,
+      "kind": "line",
+      "points": [
+       [
+        72.0,
+        1210.0
+       ],
+       [
+        1008.0,
+        1210.0
+       ]
+      ],
+      "stroke": "@fio",
+      "width": 2.0,
+      "cap": "butt"
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 72.0,
+      "y": 1283.0,
+      "text": "Fontes: Apiiro, via Ars Technica e Canaltech · 09/11/2026",
+      "font": "body",
+      "size": 19.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 1008.0,
+      "y": 1262.0,
+      "text": "Felipe Lenzi",
+      "font": "body_bold",
+      "size": 30.0,
+      "fill": "@texto",
+      "anchor": "end",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "tagline",
+      "kind": "text",
+      "x": 1008.0,
+      "y": 1296.0,
+      "text": "IA aplicada a negócios",
+      "font": "body_medium",
+      "size": 24.0,
+      "fill": "violet",
+      "anchor": "end",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   }
+  ]
+ }
+}

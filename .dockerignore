@@ -1,0 +1,12 @@
+# Só entra na imagem o que o Dockerfile copia (pyproject, uv.lock, src, config, prompts e, do
+# motor de composição, os tokens da marca e as fontes Barlow com a licença)
+*
+!pyproject.toml
+!uv.lock
+!src/
+!config/
+!prompts/
+!assets/brand/tokens.json
+!assets/fonts/Barlow*.ttf
+!assets/fonts/OFL-Barlow.txt
+**/__pycache__

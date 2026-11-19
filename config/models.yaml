@@ -1,0 +1,111 @@
+# Roteamento de modelos por agente (v2, 10/11/2026). Lido por linky_agents.harness.
+# v2 (etapa G, docs/discovery/g-pesquisas.md §3): a OpenAI desliga gpt-5-nano e gpt-5-mini em
+# 11/12/2026 (substituídos por gpt-6-luna); a DeepSeek renomeou o Flash para deepseek-flash;
+# parâmetros de raciocínio conferidos na documentação de cada fornecedor em 10/11/2026.
+# Pontos de partida do PRD §7.4. O ajuste final sai das avaliações (T7), não de achismo.
+# Mudou modelo, limite ou parâmetro? Só entra se a nota do gold set não cair.
+
+providers:
+  openai:
+    kind: openai
+    base_url: https://api.openai.com/v1
+    api_key_env: OPENAI_API_KEY
+    max_tokens_param: max_completion_tokens
+  deepseek:
+    kind: openai                       # API compatível com a da OpenAI
+    base_url: https://api.deepseek.com
+    api_key_env: DEEPSEEK_API_KEY
+    max_tokens_param: max_tokens
+  anthropic:
+    kind: anthropic
+    base_url: https://api.anthropic.com
+    api_key_env: ANTHROPIC_API_KEY
+
+# Tetos de custo em dólares, com corte automático. O mês é o teto rígido do projeto.
+budget:
+  per_run_usd: 0.15
+  per_day_usd: 0.30
+  per_month_usd: 3.00
+  warn_ratio: 0.8                      # alerta ao cruzar 80% do teto do dia ou do mês
+  timezone: America/Sao_Paulo          # "dia" e "mês" no fuso de Brasília
+
+# Erro transitório (timeout, 429, 5xx): até 2 novas tentativas, com espera de 1 s e 2 s.
+# Depois disso (ou com erro definitivo), a cadeia passa para o próximo modelo.
+retry:
+  max_retries: 2
+  backoff_s: 1.0
+
+# Cada agente: limites de tokens (entrada estimada antes da chamada; saída sempre enviada)
+# e a cadeia de fallback, do modelo inicial para os reservas.
+# A saída inválida tem 1 nova tentativa no mesmo modelo, com o erro como contexto.
+# Parâmetros de raciocínio (conferidos em 10/11/2026; ver g-pesquisas.md §3):
+#   OpenAI gpt-6-luna: reasoning_effort none|low|medium (padrão)|high|xhigh|max (sem minimal)
+#   DeepSeek: reasoning_effort none (desliga o raciocínio)|low|high (padrão)|max
+#   Anthropic 5.5: output_config.effort low|medium|high|xhigh|max; sem temperature;
+#     Haiku 5.5 tem padrão medium e Sonnet 5.5, high: por isso o effort vai explícito.
+agents:
+  triagem:                             # relevância, categoria e resumo de 1 linha
+    max_input_tokens: 10000
+    max_output_tokens: 1500
+    max_doc_tokens: 1200
+    timeout_s: 60
+    chain:
+      - {provider: openai, model: gpt-6-luna, params: {reasoning_effort: none}}
+      - {provider: deepseek, model: deepseek-flash, params: {reasoning_effort: none}}
+      - {provider: anthropic, model: claude-haiku-5-5, params: {output_config: {effort: low}}}
+
+  # Pautas (16/11): o Haiku entra como última reserva da triagem, da curadoria e da pauta,
+  # porque a chave da DeepSeek ainda não está na VPS (sem ela, a DeepSeek falha na hora).
+  curadoria:                           # notas da rubrica, padrão e público, todos de uma vez
+    max_input_tokens: 24000            # até 30 fatos por chamada: a nota é comparativa
+    max_output_tokens: 6000            # ~80 tokens por fato, mais o raciocínio
+    max_doc_tokens: 1200
+    timeout_s: 120
+    chain:
+      - {provider: openai, model: gpt-6-luna, params: {reasoning_effort: low}}
+      - {provider: deepseek, model: deepseek-v4-pro, params: {reasoning_effort: low}}
+      - {provider: anthropic, model: claude-haiku-5-5, params: {output_config: {effort: low}}}
+
+  pauta:                               # texto dos cards escolhidos (título, o quê, por quê, ângulo)
+    max_input_tokens: 10000
+    max_output_tokens: 3000
+    max_doc_tokens: 1200
+    timeout_s: 90
+    chain:
+      - {provider: openai, model: gpt-6-luna, params: {reasoning_effort: low}}
+      - {provider: anthropic, model: claude-haiku-5-5, params: {output_config: {effort: low}}}
+
+  redacao:                             # legenda na voz de Felipe (frente Post, 16/11/2026)
+    # Sonnet 5.5 primeiro: a voz é o que mais pesa, e a DeepSeek saiu da redação (D19).
+    # Alvo: até US$ 0,08 por post, contando checagem, nova tentativa e refação.
+    # Entrada maior que a v2 (8000): prompt + 3 fontes de até 1600 tokens cada.
+    max_input_tokens: 14000
+    max_output_tokens: 3000
+    max_doc_tokens: 1600
+    timeout_s: 120
+    chain:
+      - {provider: anthropic, model: claude-sonnet-5-5, params: {output_config: {effort: low}}}
+      - {provider: openai, model: gpt-5.4-mini, params: {reasoning_effort: low}}
+
+  checagem:                            # checagem de fatos: outro fornecedor que o do redator
+    # Reserva na DeepSeek, e não na Anthropic, para não checar o Sonnet com o mesmo fornecedor.
+    max_input_tokens: 14000
+    max_output_tokens: 1500
+    max_doc_tokens: 1600
+    timeout_s: 90
+    chain:
+      - {provider: openai, model: gpt-6-luna, params: {reasoning_effort: low}}
+      - {provider: deepseek, model: deepseek-flash, params: {reasoning_effort: none}}
+
+  arte:                                # direção de arte (JSON da composição, agents/art.py)
+    # Entrada: prompt com exemplos (~6 mil tokens, em cache) + post + proposta recusada.
+    # Saída: o JSON das peças (~1,5 mil) + o raciocínio, que conta como saída.
+    max_input_tokens: 16000
+    max_output_tokens: 8000
+    max_doc_tokens: 600
+    timeout_s: 120
+    # Haiku 5.5 primeiro: na avaliação de 16/11 (calibracao/03-arte-v1.md) desenhou melhor
+    # que o gpt-6-luna (número gigante, escala real), por ~US$ 0,003 por imagem.
+    chain:
+      - {provider: anthropic, model: claude-haiku-5-5, params: {output_config: {effort: medium}}}
+      - {provider: openai, model: gpt-6-luna, params: {reasoning_effort: low}}

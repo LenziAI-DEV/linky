@@ -1,0 +1,460 @@
+{
+  "date": "2026-11-06",
+  "items_file": "data/items/2026-11-06.jsonl",
+  "items_count": 42,
+  "triage": [
+    {
+      "item_id": "a83a56374fd6aa91",
+      "relevant": true
+    },
+    {
+      "item_id": "8222049ee82c8a3f",
+      "relevant": false,
+      "reason": "política partidária (termo 'Superinteligência' de Trump)"
+    },
+    {
+      "item_id": "980a934d66b53cbb",
+      "relevant": false,
+      "reason": "protesto local, sem ângulo de negócio acionável"
+    },
+    {
+      "item_id": "ecfeadb473d9a2de",
+      "relevant": false,
+      "reason": "relato pessoal de consumo (robô doméstico)"
+    },
+    {
+      "item_id": "7b101183f1178465",
+      "relevant": false,
+      "reason": "discussão de fórum, sem fato novo"
+    },
+    {
+      "item_id": "570b2ba1e13a77b6",
+      "relevant": true
+    },
+    {
+      "item_id": "a327008280e2882b",
+      "relevant": false,
+      "reason": "mercado financeiro e eleição dos EUA"
+    },
+    {
+      "item_id": "82dc5bbbff3551de",
+      "relevant": false,
+      "reason": "resumo de notícias, sem fato próprio"
+    },
+    {
+      "item_id": "5a90caffb2c87d2e",
+      "relevant": false,
+      "reason": "pesquisa de robótica de nicho"
+    },
+    {
+      "item_id": "63e1c5c982d99255",
+      "relevant": true
+    },
+    {
+      "item_id": "a128386b25427955",
+      "relevant": false,
+      "reason": "demo de modelo sem disponibilidade nem uso de negócio"
+    },
+    {
+      "item_id": "9a6eee5802a8318d",
+      "relevant": false,
+      "reason": "rodada de investimento em robótica, nicho"
+    },
+    {
+      "item_id": "58fc9a0b8ae1b328",
+      "relevant": false,
+      "reason": "mesma notícia do item 10 (outra fonte)"
+    },
+    {
+      "item_id": "02252dd253ea76c4",
+      "relevant": false,
+      "reason": "pedido de patente, sem produto"
+    },
+    {
+      "item_id": "43d5eb0f1825e394",
+      "relevant": false,
+      "reason": "oferta de varejo"
+    },
+    {
+      "item_id": "4b4d45c33550e4ea",
+      "relevant": true
+    },
+    {
+      "item_id": "09bd114e99d6ef3b",
+      "relevant": false,
+      "reason": "recurso de GPU para jogos"
+    },
+    {
+      "item_id": "a0a44ed09dc9a108",
+      "relevant": false,
+      "reason": "parceria de segurança sem dados nem impacto para empresas"
+    },
+    {
+      "item_id": "0676c12db8f0f583",
+      "relevant": false,
+      "reason": "pesquisa de telecom (6G), nicho"
+    },
+    {
+      "item_id": "819549b983fd9118",
+      "relevant": false,
+      "reason": "detalhe de infraestrutura (GPU) para quem opera endpoints"
+    },
+    {
+      "item_id": "2e5ff519dea4168b",
+      "relevant": true
+    },
+    {
+      "item_id": "1109c7dc5eeb2202",
+      "relevant": false,
+      "reason": "tutorial técnico de fornecedor"
+    },
+    {
+      "item_id": "e22092f79218deeb",
+      "relevant": false,
+      "reason": "tutorial técnico de fornecedor"
+    },
+    {
+      "item_id": "17e756367fad9506",
+      "relevant": false,
+      "reason": "tutorial técnico de fornecedor"
+    },
+    {
+      "item_id": "39d0fa8ab15570a1",
+      "relevant": true
+    },
+    {
+      "item_id": "8dc1ca775a3702bb",
+      "relevant": true
+    },
+    {
+      "item_id": "c09ed239791d8feb",
+      "relevant": false,
+      "reason": "tutorial técnico de fornecedor"
+    },
+    {
+      "item_id": "94d3f146301ece8e",
+      "relevant": false,
+      "reason": "eleição dos EUA (política partidária)"
+    },
+    {
+      "item_id": "2563b3e6ff404ee3",
+      "relevant": false,
+      "reason": "eleição dos EUA (política partidária)"
+    },
+    {
+      "item_id": "97dac9d9308d381a",
+      "relevant": true
+    },
+    {
+      "item_id": "9aeac73058ac351b",
+      "relevant": true
+    },
+    {
+      "item_id": "84e924c4ab2b73c1",
+      "relevant": false,
+      "reason": "comportamento e relacionamentos, fora do território"
+    },
+    {
+      "item_id": "f659f2b84ee7c431",
+      "relevant": false,
+      "reason": "eleição dos EUA (política partidária)"
+    },
+    {
+      "item_id": "51872e89890c6332",
+      "relevant": false,
+      "reason": "nicho (instrumentos musicais)"
+    },
+    {
+      "item_id": "0b33259ab4386660",
+      "relevant": true
+    },
+    {
+      "item_id": "e3b273e196542284",
+      "relevant": false,
+      "reason": "games, especulação"
+    },
+    {
+      "item_id": "ab976e70bde961f7",
+      "relevant": true
+    },
+    {
+      "item_id": "667f482e4e8ae995",
+      "relevant": true
+    },
+    {
+      "item_id": "b7aa5d4fa5c79c45",
+      "relevant": false,
+      "reason": "citação de opinião, sem fato"
+    },
+    {
+      "item_id": "6125c2acf5c8aada",
+      "relevant": true
+    },
+    {
+      "item_id": "478b03a8ad453e85",
+      "relevant": false,
+      "reason": "política pública de outro país, sem paralelo claro para empresas"
+    },
+    {
+      "item_id": "c9a2421db55b292e",
+      "relevant": false,
+      "reason": "política partidária dos EUA"
+    }
+  ],
+  "scored": [
+    {
+      "item_id": "4b4d45c33550e4ea",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 2,
+        "brazil": 3,
+        "positioning": 3,
+        "conversation": 3
+      },
+      "note": "relatos da Folha + resposta oficial ao Tecnoblog"
+    },
+    {
+      "item_id": "97dac9d9308d381a",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "evidence": 3,
+        "brazil": 1,
+        "positioning": 3,
+        "conversation": 2
+      },
+      "note": "dados da Ramp; casa com a série de bastidores (custo)"
+    },
+    {
+      "item_id": "39d0fa8ab15570a1",
+      "scores": {
+        "relevance": 3,
+        "novelty": 2,
+        "evidence": 2,
+        "brazil": 1,
+        "positioning": 3,
+        "conversation": 2
+      },
+      "note": "números da própria empresa, em blog da AWS"
+    },
+    {
+      "item_id": "ab976e70bde961f7",
+      "scores": {
+        "relevance": 2,
+        "novelty": 3,
+        "evidence": 2,
+        "brazil": 1,
+        "positioning": 2,
+        "conversation": 2
+      },
+      "note": "texto completo inacessível (Wired bloqueia)"
+    },
+    {
+      "item_id": "2e5ff519dea4168b",
+      "scores": {
+        "relevance": 2,
+        "novelty": 2,
+        "evidence": 2,
+        "brazil": 0,
+        "positioning": 3,
+        "conversation": 1
+      }
+    },
+    {
+      "item_id": "6125c2acf5c8aada",
+      "scores": {
+        "relevance": 2,
+        "novelty": 2,
+        "evidence": 1,
+        "brazil": 1,
+        "positioning": 2,
+        "conversation": 2
+      },
+      "note": "lançamento; só a matéria do Canaltech"
+    },
+    {
+      "item_id": "0b33259ab4386660",
+      "scores": {
+        "relevance": 2,
+        "novelty": 2,
+        "evidence": 2,
+        "brazil": 1,
+        "positioning": 1,
+        "conversation": 2
+      }
+    },
+    {
+      "item_id": "570b2ba1e13a77b6",
+      "scores": {
+        "relevance": 2,
+        "novelty": 1,
+        "evidence": 2,
+        "brazil": 3,
+        "positioning": 1,
+        "conversation": 2
+      }
+    },
+    {
+      "item_id": "8dc1ca775a3702bb",
+      "scores": {
+        "relevance": 2,
+        "novelty": 1,
+        "evidence": 2,
+        "brazil": 0,
+        "positioning": 2,
+        "conversation": 1
+      }
+    },
+    {
+      "item_id": "667f482e4e8ae995",
+      "scores": {
+        "relevance": 2,
+        "novelty": 1,
+        "evidence": 1,
+        "brazil": 1,
+        "positioning": 2,
+        "conversation": 2
+      }
+    },
+    {
+      "item_id": "63e1c5c982d99255",
+      "scores": {
+        "relevance": 2,
+        "novelty": 2,
+        "evidence": 1,
+        "brazil": 1,
+        "positioning": 1,
+        "conversation": 1
+      }
+    },
+    {
+      "item_id": "9aeac73058ac351b",
+      "scores": {
+        "relevance": 1,
+        "novelty": 2,
+        "evidence": 1,
+        "brazil": 0,
+        "positioning": 1,
+        "conversation": 1
+      }
+    },
+    {
+      "item_id": "a83a56374fd6aa91",
+      "eliminated": "negociação com fonte anônima (rumor)"
+    }
+  ],
+  "cards": [
+    {
+      "rank": 1,
+      "item_ids": [
+        "4b4d45c33550e4ea"
+      ],
+      "format": "caso",
+      "title": "Nubank corta equipe de investigação de fraudes após IA reduzir a fila em 80%",
+      "what_happened": "Segundo a Folha (via Tecnoblog), o Nubank desligou cerca de 30 pessoas da equipe de investigação de fraudes em 03/11. Ferramentas de IA adotadas há cerca de 6 meses teriam reduzido em 80% a fila de reclamações. O banco fala em reestruturação, diz que cerca de 40 pessoas já tinham sido remanejadas e que segue contratando.",
+      "why_it_matters": "É um caso brasileiro de grande porte em que a IA muda o tamanho de uma área operacional, e o detalhe está no como: analistas revisavam as conclusões da IA, e essas correções melhoravam o modelo. Para gestores, a questão não é 'IA corta vaga', é como redesenhar funções quando o trabalho humano vira supervisão e exceção.",
+      "approach": "Caso real. Gancho: 'Durante seis meses, a equipe revisou o trabalho da IA. Sem perceber, estava treinando a própria substituição.' Tom sensato, sem alarmismo; foco em redesenho de funções. Os números vêm de relatos: o texto atribui à Folha.",
+      "sources": [
+        "https://tecnoblog.net/noticias/nubank-demite-funcionarios-apos-ia-reduzir-fila-de-fraudes"
+      ]
+    },
+    {
+      "rank": 2,
+      "item_ids": [
+        "97dac9d9308d381a"
+      ],
+      "format": "dado",
+      "title": "Uso de IA nas empresas continua subindo, mas o gasto parou de crescer",
+      "what_happened": "Dados da Ramp publicados pelo TechCrunch (06/11): o gasto com tokens cresceu 1,5% em agosto e setembro, contra 42% em julho, e voltou a subir 8,9% entre 23/09 e 23/10, enquanto o volume de uso segue crescendo. A empresa mediana gasta de US$ 12 a 15 por funcionário por mês; o 1% mais intenso, cerca de US$ 10 mil.",
+      "why_it_matters": "As empresas estão aprendendo a pagar menos pela mesma IA: cortes de preço, orçamento por funcionário e roteadores que mandam tarefas simples para modelos baratos. Para quem está começando, o recado é que custo de IA é decisão de arquitetura, não fatura fixa.",
+      "approach": "Dado comentado. Gancho: 'O uso de IA nas empresas continua subindo. O gasto, não. E isso é uma boa notícia.' Opcional: ligar à série de bastidores (o linky-dev roda com teto de US$ 3/mês por roteamento de modelos), só se você quiser citar.",
+      "sources": [
+        "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo"
+      ]
+    },
+    {
+      "rank": 3,
+      "item_ids": [
+        "39d0fa8ab15570a1"
+      ],
+      "format": "caso",
+      "title": "Fintech resolve 90% dos alertas de segurança com agentes que sabem quando escalar",
+      "what_happened": "Em post técnico no blog da AWS (06/11), a Greenlight Financial conta que seu sistema de agentes resolve mais de 90% de até 4.000 casos mensais de segurança e risco sem intervenção humana. São duas camadas: um supervisor faz a triagem com mais de 30 agentes especializados, e um segundo nível investiga os cerca de 10% de casos complexos e entrega relatórios com evidências para revisão humana.",
+      "why_it_matters": "É um modelo replicável de agente que automatiza o volume e escala as exceções já com a evidência pronta. Serve para atendimento, compliance e financeiro: qualquer fila de casos repetitivos.",
+      "approach": "Caso real. Gancho: 'O segredo de um agente que resolve 90% dos casos não é resolver tudo. É saber o que não resolver.' Ressalva: conteúdo de fornecedor; os números são da própria empresa.",
+      "sources": [
+        "https://aws.amazon.com/blogs/machine-learning/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore"
+      ]
+    }
+  ],
+  "choice": {
+    "card_rank": 1,
+    "reason": null,
+    "opinion": null
+  },
+  "post": {
+    "draft": "Durante seis meses, uma equipe do Nubank revisou o trabalho da IA. As correções ajudavam a melhorar o sistema. Na última terça, parte dessa equipe foi desligada.\n\nSegundo a Folha de S.Paulo, o banco desligou cerca de 30 pessoas da área que investiga denúncias de fraude. O que os relatos descrevem:\n\n• Começo pelo simples: a IA passou a analisar primeiro os casos de menor complexidade\n• Humano como revisor: analistas conferiam as conclusões, e as correções aperfeiçoavam os modelos\n• Resultado: segundo funcionários, a fila de reclamações caiu 80%\n\nO banco fala em reestruturação e diz que segue contratando. Quem ficou cuida dos casos complexos.\n\nOnde isso gera valor, e exige cuidado, em qualquer empresa:\n\n→ Toda fila de casos repetitivos, do atendimento ao compliance, pode seguir o mesmo caminho\n→ A revisão humana é o que ensina o sistema. Precisa ser desenhada como função, não como tarefa extra\n→ O ganho real vem quando as pessoas migram para o que a IA ainda não resolve bem\n\nEssa é a lição de negócio que muita empresa adia: projeto de IA também é projeto de redesenho de funções, e começa no primeiro dia, não quando a fila zera.\n\nNa sua empresa, quem revisa o trabalho da IA hoje, e qual será o papel dessas pessoas daqui a seis meses?\n\n#InteligenciaArtificial #FuturoDoTrabalho #Negocios",
+    "edit_rounds": 0,
+    "edits": [],
+    "image_spec": {
+      "options": {
+        "escada": {
+          "layout": "escada",
+          "company": {
+            "name": "nubank"
+          },
+          "context": "desligou cerca de 30 pessoas da equipe de fraudes",
+          "headline": "IA também é | **redesenho** | de funções.",
+          "steps": [
+            {
+              "title": "Casos simples",
+              "text": "IA analisa primeiro os de menor risco"
+            },
+            {
+              "title": "Humano revisa",
+              "text": "Analistas corrigem e ensinam o modelo"
+            },
+            {
+              "title": "Fila 80% menor",
+              "text": "Quem fica cuida dos casos complexos"
+            }
+          ],
+          "milestone": "-80%",
+          "source": "Folha de S.Paulo, via Tecnoblog · 06/11/2026"
+        },
+        "contraste": {
+          "layout": "contraste",
+          "company": {
+            "name": "nubank"
+          },
+          "headline": "Não é só | ~~corte.~~ | É **redesenho** | de funções.",
+          "items": [
+            "IA começa pelos casos de menor risco",
+            "Analistas revisam e corrigem a IA",
+            "Fila de reclamações cai 80%",
+            "Equipe restante foca nos casos complexos"
+          ],
+          "source": "Folha de S.Paulo, via Tecnoblog · 06/11/2026"
+        }
+      },
+      "chosen": "custom_v2",
+      "custom_v2": "tools/t2_art/2026-11-06-nubank.py"
+    },
+    "final": "Durante seis meses, uma equipe do Nubank revisou o trabalho da IA. As correções ajudavam a melhorar o sistema. Na última terça, parte dessa equipe foi desligada.\n\nSegundo a Folha de S.Paulo, o banco desligou cerca de 30 pessoas da área que investiga denúncias de fraude. O que os relatos descrevem:\n\n• Começo pelo simples: a IA passou a analisar primeiro os casos de menor complexidade\n• Humano como revisor: analistas conferiam as conclusões, e as correções aperfeiçoavam os modelos\n• Resultado: segundo funcionários, a fila de reclamações caiu 80%\n\nO banco fala em reestruturação e diz que segue contratando. Quem ficou cuida dos casos complexos.\n\nOnde isso gera valor, e exige cuidado, em qualquer empresa:\n\n→ Toda fila de casos repetitivos, do atendimento ao compliance, pode seguir o mesmo caminho\n→ A revisão humana é o que ensina o sistema. Precisa ser desenhada como função, não como tarefa extra\n→ O ganho real vem quando as pessoas migram para o que a IA ainda não resolve bem\n\nEssa é a lição de negócio que muita empresa adia: projeto de IA também é projeto de redesenho de funções, e começa no primeiro dia, não quando a fila zera.\n\nNa sua empresa, quem revisa o trabalho da IA hoje, e qual será o papel dessas pessoas daqui a seis meses?\n\n#InteligenciaArtificial #FuturoDoTrabalho #Negocios",
+    "linkedin_urn": "urn:li:share:7524583964607541248",
+    "published_at": "2026-11-06T21:30:17+00:00"
+  },
+  "human_minutes": 5,
+  "notes": [
+    "Itens 10 e 13 são a mesma notícia (Alexa) em fontes diferentes: o dedupe por título não pega. A triagem precisa agrupar por evento.",
+    "Cards 1 e 3 têm o mesmo tema (IA em filas de fraude e segurança). A rubrica v0 não tem critério de diversidade entre os cards.",
+    "Fontes AWS ML geram muito tutorial técnico (5 de 8 itens descartados): candidata à poda no dia 13/11.",
+    "Wired bloqueia a leitura do texto: itens só com resumo têm evidência fraca para a curadoria.",
+    "Coleta parcial: dia ainda em andamento (16:30 BRT) quando a curadoria foi feita.",
+    "Renderização: til de FUNÇÕES invadia o bloco violeta e '-80%' estourava a bandeira; corrigido no motor (entrelinha medida pela tinta real dos glyphs).",
+    "Aprovado sem edições em 06/11, com a imagem escada; publicação agendada para 07/11 09:00 BRT (sábado), para não sair dois posts no mesmo dia.",
+    "Felipe rejeitou o uso de moldes fixos (06/11): imagem refeita com composição própria (v2). O agendamento de sábado foi cancelado; o novo horário segue o calendário fixo (seg 09/11 18:30).",
+    "Imagem v2 aprovada por Felipe ('ficou muito bom, gostei demais'). Exceção de teste: publicação no mesmo dia do post do Airbnb, autorizada por Felipe; sex 06/11 18:30 BRT."
+  ]
+}

@@ -1,0 +1,446 @@
+[
+  {
+    "id": "linkyApprovalEmails",
+    "name": "[linky] E-mails de aprovação (a cada 15 min)",
+    "active": false,
+    "nodes": [
+      {
+        "parameters": {
+          "rule": {
+            "interval": [
+              {
+                "field": "cronExpression",
+                "expression": "5-59/15 * * * *"
+              }
+            ]
+          }
+        },
+        "name": "A cada 15 min",
+        "type": "n8n-nodes-base.scheduleTrigger",
+        "typeVersion": 1.2,
+        "position": [
+          0,
+          0
+        ],
+        "id": "58e1b303-5240-5824-b32f-7b60db82f059"
+      },
+      {
+        "parameters": {},
+        "name": "Manual",
+        "type": "n8n-nodes-base.manualTrigger",
+        "typeVersion": 1,
+        "position": [
+          0,
+          200
+        ],
+        "id": "940ed85c-2030-51a8-9637-b29325607dd3"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "http://linky-agents:8080/draft_next",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {
+            "response": {
+              "response": {
+                "neverError": true
+              }
+            },
+            "timeout": 300000
+          }
+        },
+        "name": "Redigir próximo",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          240,
+          100
+        ],
+        "id": "942fa896-8a0d-5e34-89ce-9faa2c39fa68",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        },
+        "onError": "continueRegularOutput"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "http://linky-agents:8080/approval_emails",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {}
+        },
+        "name": "Posts prontos",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          480,
+          100
+        ],
+        "id": "c5393fec-f14a-5c02-9f7d-cc6a37309c49",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "fieldToSplitOut": "emails",
+          "options": {}
+        },
+        "name": "E-mails",
+        "type": "n8n-nodes-base.splitOut",
+        "typeVersion": 1,
+        "position": [
+          720,
+          100
+        ],
+        "id": "d65c7fd2-5bcd-5f8d-9029-cdfdb5f7c719"
+      },
+      {
+        "parameters": {},
+        "name": "Um e-mail",
+        "type": "n8n-nodes-base.limit",
+        "typeVersion": 1,
+        "position": [
+          960,
+          100
+        ],
+        "id": "caf59ffd-5a84-56ba-9ca7-51d78c4b4bc9"
+      },
+      {
+        "parameters": {
+          "method": "GET",
+          "url": "=http://linky-agents:8080{{ $('Um e-mail').first().json.image_url_path }}",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {
+            "response": {
+              "response": {
+                "neverError": true
+              }
+            }
+          }
+        },
+        "name": "Ler imagem",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          1200,
+          100
+        ],
+        "id": "08f7237f-11e0-56e8-be9e-75b57fcb18ff",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        },
+        "onError": "continueRegularOutput"
+      },
+      {
+        "parameters": {
+          "conditions": {
+            "options": {
+              "caseSensitive": true,
+              "leftValue": "",
+              "typeValidation": "strict",
+              "version": 2
+            },
+            "conditions": [
+              {
+                "id": "1105ab41-edc9-5345-921e-14ef18da3ae8",
+                "leftValue": "={{ !!$json.base64 }}",
+                "rightValue": "",
+                "operator": {
+                  "type": "boolean",
+                  "operation": "true",
+                  "singleValue": true
+                }
+              }
+            ],
+            "combinator": "and"
+          },
+          "options": {}
+        },
+        "name": "Imagem existe?",
+        "type": "n8n-nodes-base.if",
+        "typeVersion": 2.2,
+        "position": [
+          1440,
+          100
+        ],
+        "id": "f033d818-8bfa-51e5-b79e-970c662b6298"
+      },
+      {
+        "parameters": {},
+        "name": "Imagem em base64",
+        "type": "n8n-nodes-base.noOp",
+        "typeVersion": 1,
+        "position": [
+          1680,
+          0
+        ],
+        "id": "36773e21-cb58-56bc-beca-38a3f8265b57"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "https://api.resend.com/emails",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify({ from: 'linky-dev <linky@example.com>', to: [\"voce@example.com\"], subject: $('Um e-mail').first().json.email.subject, html: $('Um e-mail').first().json.email.html, text: $('Um e-mail').first().json.email.text, attachments: [{ filename: $('Um e-mail').first().json.image, content: $('Ler imagem').first().json.base64, content_id: 'linky-post' }] }) }}",
+          "options": {},
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "Idempotency-Key",
+                "value": "=linky-aprovacao-{{ $('Um e-mail').first().json.form_id }}"
+              }
+            ]
+          }
+        },
+        "name": "Enviar com imagem",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          1920,
+          0
+        ],
+        "id": "92620fee-e255-5c90-be44-7e5913810d53",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "RESEND_CREDENTIAL_ID",
+            "name": "Resend linky"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "https://api.resend.com/emails",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify({ from: 'linky-dev <linky@example.com>', to: [\"voce@example.com\"], subject: 'IMAGEM NÃO ENCONTRADA ' + $('Um e-mail').first().json.email.subject, html: $('Um e-mail').first().json.email.html, text: $('Um e-mail').first().json.email.text }) }}",
+          "options": {},
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "Idempotency-Key",
+                "value": "=linky-aprovacao-{{ $('Um e-mail').first().json.form_id }}"
+              }
+            ]
+          }
+        },
+        "name": "Enviar aviso (sem imagem)",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          1920,
+          200
+        ],
+        "id": "0b3c15f0-1227-507b-8e1f-b1da4fe626e9",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "RESEND_CREDENTIAL_ID",
+            "name": "Resend linky"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "=http://linky-agents:8080/forms/{{ encodeURIComponent($('Um e-mail').first().json.form_id) }}/sent",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {}
+        },
+        "name": "Confirmar envio",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          2160,
+          0
+        ],
+        "id": "ccebcfbd-346b-5e5d-a9e3-c29ab747f2a8",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "=http://linky-agents:8080/forms/{{ encodeURIComponent($('Um e-mail').first().json.form_id) }}/sent",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {}
+        },
+        "name": "Confirmar envio (sem imagem)",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          2160,
+          200
+        ],
+        "id": "3628fe43-b6eb-5300-8cde-9b5916b35873",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        }
+      }
+    ],
+    "connections": {
+      "A cada 15 min": {
+        "main": [
+          [
+            {
+              "node": "Redigir próximo",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Manual": {
+        "main": [
+          [
+            {
+              "node": "Redigir próximo",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Redigir próximo": {
+        "main": [
+          [
+            {
+              "node": "Posts prontos",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Posts prontos": {
+        "main": [
+          [
+            {
+              "node": "E-mails",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "E-mails": {
+        "main": [
+          [
+            {
+              "node": "Um e-mail",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Um e-mail": {
+        "main": [
+          [
+            {
+              "node": "Ler imagem",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Ler imagem": {
+        "main": [
+          [
+            {
+              "node": "Imagem existe?",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Imagem existe?": {
+        "main": [
+          [
+            {
+              "node": "Imagem em base64",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Enviar aviso (sem imagem)",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Imagem em base64": {
+        "main": [
+          [
+            {
+              "node": "Enviar com imagem",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Enviar com imagem": {
+        "main": [
+          [
+            {
+              "node": "Confirmar envio",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Enviar aviso (sem imagem)": {
+        "main": [
+          [
+            {
+              "node": "Confirmar envio (sem imagem)",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "settings": {
+      "executionOrder": "v1",
+      "timezone": "America/Sao_Paulo",
+      "saveManualExecutions": true,
+      "callerPolicy": "workflowsFromSameOwner"
+    }
+  }
+]

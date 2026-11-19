@@ -1,0 +1,338 @@
+{
+ "alt_text": "Manchete: a IA à vontade acabou. Um bloco violeta enorme mostra o número 3, as três big techs que passaram a cobrar por uso em poucos dias. Ao lado, três preços: pacote de US$ 49,99 no Logic Pro da Apple, R$ 96,99 por mês como mínimo para o Gemini Pro após o AI Plus perder o modelo no Google, e Galaxy AI pago de US$ 4,99 por mês em teste pela Samsung. Abaixo, a frase: cada resposta de modelo grande custa computação.",
+ "theme": "escuro",
+ "composition": {
+  "theme": "escuro",
+  "background": null,
+  "pieces": [
+   {
+    "name": "manchete com destaque",
+    "elements": [
+     {
+      "id": null,
+      "kind": "headline",
+      "markup": "A IA à vontade | **acabou.**",
+      "x": 72.0,
+      "top": 120.0,
+      "max_width": 936.0,
+      "max_height": 220.0,
+      "max_lines": 2,
+      "align": "start",
+      "max_size": null,
+      "plain": "@texto",
+      "accent_box": "violet",
+      "accent_text": "white",
+      "soft_box": "lavender",
+      "soft_text": "ink",
+      "strike": "@texto"
+     }
+    ]
+   },
+   {
+    "name": "número em bloco sangrando",
+    "elements": [
+     {
+      "id": "bloco",
+      "kind": "rect",
+      "x": 0.0,
+      "y": 370.0,
+      "w": 380.0,
+      "h": 780.0,
+      "fill": "violet",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": "numero",
+      "kind": "text",
+      "x": 80.8,
+      "y": 911.8,
+      "text": "3",
+      "font": "headline",
+      "size": 560.0,
+      "fill": "white",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "legenda1",
+      "kind": "text",
+      "x": 72.0,
+      "y": 1076.0,
+      "text": "grandes cobram por uso",
+      "font": "body_semibold",
+      "size": 26.0,
+      "fill": "white",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "legenda2",
+      "kind": "text",
+      "x": 72.0,
+      "y": 1110.0,
+      "text": "em poucos dias",
+      "font": "body_semibold",
+      "size": 26.0,
+      "fill": "white",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   },
+   {
+    "name": "três preços em coluna de números",
+    "elements": [
+     {
+      "id": "p1-marcador",
+      "kind": "rect",
+      "x": 420.0,
+      "y": 400.0,
+      "w": 14.0,
+      "h": 14.0,
+      "fill": "violet",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": "p1-numero",
+      "kind": "text",
+      "x": 420.0,
+      "y": 482.0,
+      "text": "US$ 49,99",
+      "font": "headline",
+      "size": 50.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "p1-linha1",
+      "kind": "text",
+      "x": 420.0,
+      "y": 522.0,
+      "text": "pacote de uso no Logic Pro",
+      "font": "body_semibold",
+      "size": 24.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "p1-linha2",
+      "kind": "text",
+      "x": 420.0,
+      "y": 554.0,
+      "text": "entra quando a cota acaba",
+      "font": "body",
+      "size": 22.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "p2-marcador",
+      "kind": "rect",
+      "x": 420.0,
+      "y": 640.0,
+      "w": 14.0,
+      "h": 14.0,
+      "fill": "violet",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": "p2-numero",
+      "kind": "text",
+      "x": 420.0,
+      "y": 722.0,
+      "text": "R$ 96,99",
+      "font": "headline",
+      "size": 50.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "p2-linha1",
+      "kind": "text",
+      "x": 420.0,
+      "y": 762.0,
+      "text": "mínimo para o Gemini Pro",
+      "font": "body_semibold",
+      "size": 24.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "p2-linha2",
+      "kind": "text",
+      "x": 420.0,
+      "y": 794.0,
+      "text": "AI Plus perde Gemini Pro",
+      "font": "body",
+      "size": 22.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "p3-marcador",
+      "kind": "rect",
+      "x": 420.0,
+      "y": 880.0,
+      "w": 14.0,
+      "h": 14.0,
+      "fill": "violet",
+      "stroke": null,
+      "stroke_width": 0.0,
+      "radius": 0.0,
+      "dash": null
+     },
+     {
+      "id": "p3-numero",
+      "kind": "text",
+      "x": 420.0,
+      "y": 962.0,
+      "text": "US$ 4,99",
+      "font": "headline",
+      "size": 50.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "p3-linha1",
+      "kind": "text",
+      "x": 420.0,
+      "y": 1002.0,
+      "text": "Galaxy AI pago, por mês",
+      "font": "body_semibold",
+      "size": 24.0,
+      "fill": "@texto",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "p3-linha2",
+      "kind": "text",
+      "x": 420.0,
+      "y": 1034.0,
+      "text": "em teste pela Samsung",
+      "font": "body",
+      "size": 22.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 420.0,
+      "y": 1100.0,
+      "text": "Cada resposta de modelo grande custa computação.",
+      "font": "body",
+      "size": 22.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   },
+   {
+    "name": "rodapé com fio",
+    "elements": [
+     {
+      "id": null,
+      "kind": "line",
+      "points": [
+       [
+        72.0,
+        1210.0
+       ],
+       [
+        1008.0,
+        1210.0
+       ]
+      ],
+      "stroke": "@fio",
+      "width": 2.0,
+      "cap": "butt"
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 72.0,
+      "y": 1262.0,
+      "text": "Fontes: The Verge, Tecnoblog e Canaltech",
+      "font": "body",
+      "size": 19.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 72.0,
+      "y": 1290.0,
+      "text": "09/11/2026 · Samsung: teste identificado em arquivos do app",
+      "font": "body",
+      "size": 19.0,
+      "fill": "@apoio",
+      "anchor": "start",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": null,
+      "kind": "text",
+      "x": 1008.0,
+      "y": 1262.0,
+      "text": "Felipe Lenzi",
+      "font": "body_bold",
+      "size": 30.0,
+      "fill": "@texto",
+      "anchor": "end",
+      "tracking": 0.0,
+      "strike": null
+     },
+     {
+      "id": "tagline",
+      "kind": "text",
+      "x": 1008.0,
+      "y": 1296.0,
+      "text": "IA aplicada a negócios",
+      "font": "body_medium",
+      "size": 24.0,
+      "fill": "lavender",
+      "anchor": "end",
+      "tracking": 0.0,
+      "strike": null
+     }
+    ]
+   }
+  ]
+ }
+}

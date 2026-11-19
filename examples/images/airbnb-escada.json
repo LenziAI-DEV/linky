@@ -1,0 +1,13 @@
+{
+  "layout": "escada",
+  "company": {"name": "airbnb"},
+  "context": "anunciou seu agente de viagens para 2027",
+  "headline": "Agente genérico | não resolve | problema | **específico.**",
+  "steps": [
+    {"title": "Especializado", "text": "Monta a tela na hora: mapas, fotos, roteiros"},
+    {"title": "Jornada inteira", "text": "Reembolso, trocas e suporte 24h"},
+    {"title": "Limites claros", "text": "Agente genérico não planeja viagem"}
+  ],
+  "milestone": "2027",
+  "source": "TechCrunch · carta aos acionistas da Airbnb (3º tri) · 05/11/2026"
+}

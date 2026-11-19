@@ -1,0 +1,164 @@
+# Fontes da curadoria do linky-dev. Versão 1 (2026-11-05), em período de teste.
+# Todas foram verificadas em 05/11/2026: RSS/Atom respondendo e com publicações nos últimos 7 dias.
+#
+# Campos:
+#   tier:   primary  -> fonte primária (laboratório, empresa, pesquisa)
+#           press    -> imprensa de tecnologia
+#           analysis -> análise, negócios e pesquisa de mercado
+#           br       -> fonte brasileira
+#   filter: true     -> fonte generalista: só entram itens que citam termos de IA (ver keywords)
+#   status: active | probation (em observação: avaliar depois de 7 dias de coleta)
+#
+# Fora por enquanto (sem RSS válido em 05/11/2026): Anthropic, a16z, Exame IA, The Batch,
+# Meta AI, Gartner (403), IT Forum (403), Stanford HAI (feed vazio), VentureBeat (429).
+
+defaults:
+  max_items_per_run: 30
+
+keywords:
+  # Regex sem distinção de maiúsculas, aplicados ao título e ao resumo
+  case_insensitive:
+    - "intelig[eê]ncia artificial"
+    - "artificial intelligence"
+    - "machine learning"
+    - "aprendizado de m[aá]quina"
+    - "\\bllms?\\b"
+    - "large language model"
+    - "modelos? de linguagem"
+    - "\\bgen(erative)? ?ai\\b"
+    - "\\bia generativa\\b"
+    - "\\bagentes?\\b.*\\b(ia|ai)\\b"
+    - "\\bai agents?\\b"
+    - "\\b(chatgpt|openai|anthropic|claude|gemini|copilot|deepmind|mistral|deepseek|llama|hugging ?face)\\b"
+    - "\\b(gpt-\\d|nvidia)\\b"
+  # Siglas exigem maiúscula exata, para não casar com palavras comuns
+  case_sensitive:
+    - "\\bIA\\b"
+    - "\\bAI\\b"
+
+sources:
+  # --- Fontes primárias ---
+  - id: openai
+    name: OpenAI News
+    url: https://openai.com/news/rss.xml
+    tier: primary
+  - id: deepmind
+    name: Google DeepMind
+    url: https://deepmind.google/blog/rss.xml
+    tier: primary
+  - id: google-ai
+    name: Google AI (The Keyword)
+    url: https://blog.google/technology/ai/rss/
+    tier: primary
+  - id: google-research
+    name: Google Research
+    url: https://research.google/blog/rss/
+    tier: primary
+  - id: microsoft-source-ai
+    name: Microsoft Source — AI
+    url: https://news.microsoft.com/source/topics/ai/feed/
+    tier: primary
+    status: probation
+  - id: nvidia
+    name: NVIDIA Blog
+    url: https://blogs.nvidia.com/feed/
+    tier: primary
+    filter: true
+  - id: aws-ml
+    name: AWS Machine Learning Blog
+    url: https://aws.amazon.com/blogs/machine-learning/feed/
+    tier: primary
+    status: probation
+  - id: huggingface
+    name: Hugging Face Blog
+    url: https://huggingface.co/blog/feed.xml
+    tier: primary
+
+  # --- Imprensa de tecnologia ---
+  - id: techcrunch-ai
+    name: TechCrunch AI
+    url: https://techcrunch.com/category/artificial-intelligence/feed/
+    tier: press
+  - id: verge-ai
+    name: The Verge AI
+    url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+    tier: press
+  - id: mit-tr-ai
+    name: MIT Technology Review — AI
+    url: https://www.technologyreview.com/topic/artificial-intelligence/feed
+    tier: press
+  - id: ars-ai
+    name: Ars Technica AI
+    url: https://arstechnica.com/ai/feed/
+    tier: press
+  - id: wired-ai
+    name: WIRED AI
+    url: https://www.wired.com/feed/tag/ai/latest/rss
+    tier: press
+  - id: hn-ai-100
+    name: Hacker News (IA, ≥100 pontos)
+    url: https://hnrss.org/newest?q=AI+OR+LLM+OR+OpenAI+OR+Anthropic&points=100
+    tier: press
+    status: probation
+
+  # --- Análise, negócios e pesquisa de mercado ---
+  - id: mckinsey
+    name: McKinsey Insights
+    url: https://www.mckinsey.com/insights/rss
+    tier: analysis
+    filter: true
+  - id: hbr
+    name: Harvard Business Review
+    url: http://feeds.hbr.org/harvardbusiness
+    tier: analysis
+    filter: true
+  - id: mit-smr-ai
+    name: MIT Sloan Management Review — AI
+    url: https://sloanreview.mit.edu/tag/artificial-intelligence/feed/
+    tier: analysis
+  - id: importai
+    name: Import AI (Jack Clark)
+    url: https://importai.substack.com/feed
+    tier: analysis
+    status: disabled  # 403 a partir da VPS (bloqueio de datacenter)
+  - id: simonwillison
+    name: Simon Willison's Weblog
+    url: https://simonwillison.net/atom/everything/
+    tier: analysis
+    filter: true
+    status: probation
+
+  # --- Brasil ---
+  - id: mit-tr-br
+    name: MIT Technology Review Brasil
+    url: https://mittechreview.com.br/feed/
+    tier: br
+    filter: true
+  - id: neofeed
+    name: NeoFeed
+    url: https://neofeed.com.br/feed/
+    tier: br
+    filter: true
+    status: disabled  # 403 a partir da VPS (bloqueio de datacenter)
+  - id: startups-br
+    name: Startups
+    url: https://startups.com.br/feed/
+    tier: br
+    filter: true
+    status: disabled  # 403 a partir da VPS (bloqueio de datacenter)
+  - id: tecnoblog
+    name: Tecnoblog
+    url: https://tecnoblog.net/feed/
+    tier: br
+    filter: true
+  - id: canaltech
+    name: Canaltech
+    url: https://canaltech.com.br/rss/
+    tier: br
+    filter: true
+  - id: olhar-digital
+    name: Olhar Digital
+    url: https://olhardigital.com.br/feed/
+    tier: br
+    filter: true
+    status: probation

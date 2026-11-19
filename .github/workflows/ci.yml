@@ -1,0 +1,28 @@
+# CI do linky-dev: testes e lint a cada push e pull request. Tudo offline (sem chave de API).
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Instalar Python 3.12
+        run: uv python install 3.12
+      - name: Instalar dependências (lockfile congelado)
+        run: uv sync --frozen
+      - name: Testes
+        run: uv run pytest
+      - name: Lint
+        run: uv run ruff check src tests

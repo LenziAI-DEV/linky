@@ -1,0 +1,232 @@
+[
+  {
+    "id": "linkyForms",
+    "name": "[linky] Formulários das decisões (webhook)",
+    "active": false,
+    "nodes": [
+      {
+        "parameters": {
+          "httpMethod": "GET",
+          "path": "linky-form",
+          "responseMode": "responseNode",
+          "options": {}
+        },
+        "name": "Abrir formulário (GET)",
+        "type": "n8n-nodes-base.webhook",
+        "typeVersion": 2,
+        "position": [
+          0,
+          0
+        ],
+        "id": "cb460216-2f4e-5acb-ae22-b587a927f873",
+        "webhookId": "0cc086d4-7a77-5d28-837a-d968e9dbab96"
+      },
+      {
+        "parameters": {
+          "method": "GET",
+          "url": "=http://linky-agents:8080/forms/{{ encodeURIComponent((String($json.query.f || ($json.body && $json.body.f) || '').match(/^[A-Za-z0-9_-]{8,64}$/) ? String($json.query.f || $json.body.f) : 'invalido')) }}",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {
+            "response": {
+              "response": {
+                "neverError": true
+              }
+            }
+          }
+        },
+        "name": "Página",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          240,
+          0
+        ],
+        "id": "37b12688-db14-5588-a3a8-5badb8c1e729",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        },
+        "onError": "continueRegularOutput"
+      },
+      {
+        "parameters": {
+          "respondWith": "text",
+          "responseBody": "={{ $json.html || '<!doctype html><meta charset=utf-8><p>Formulário indisponível. Tente de novo em alguns minutos.</p>' }}",
+          "options": {
+            "responseCode": "={{ $json.status || 503 }}",
+            "responseHeaders": {
+              "entries": [
+                {
+                  "name": "Content-Type",
+                  "value": "text/html; charset=utf-8"
+                },
+                {
+                  "name": "Cache-Control",
+                  "value": "no-store"
+                },
+                {
+                  "name": "X-Robots-Tag",
+                  "value": "noindex, nofollow"
+                },
+                {
+                  "name": "Referrer-Policy",
+                  "value": "no-referrer"
+                }
+              ]
+            }
+          }
+        },
+        "name": "Responder página",
+        "type": "n8n-nodes-base.respondToWebhook",
+        "typeVersion": 1.1,
+        "position": [
+          480,
+          0
+        ],
+        "id": "da913c42-d6b0-59d0-be01-869cbd31e630"
+      },
+      {
+        "parameters": {
+          "httpMethod": "POST",
+          "path": "linky-form",
+          "responseMode": "responseNode",
+          "options": {}
+        },
+        "name": "Enviar formulário (POST)",
+        "type": "n8n-nodes-base.webhook",
+        "typeVersion": 2,
+        "position": [
+          0,
+          240
+        ],
+        "id": "3df3bb7d-71db-56f4-8576-04570b0b9cb3",
+        "webhookId": "c196a3f6-d7ed-534a-b438-53e43afa3769"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "=http://linky-agents:8080/forms/{{ encodeURIComponent((String($json.query.f || ($json.body && $json.body.f) || '').match(/^[A-Za-z0-9_-]{8,64}$/) ? String($json.query.f || $json.body.f) : 'invalido')) }}",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {
+            "response": {
+              "response": {
+                "neverError": true
+              }
+            }
+          },
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify({ fields: $json.body || {} }) }}"
+        },
+        "name": "Decidir",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          240,
+          240
+        ],
+        "id": "4f85fc1f-516b-5b6a-957b-885611ee3d68",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        },
+        "onError": "continueRegularOutput"
+      },
+      {
+        "parameters": {
+          "respondWith": "text",
+          "responseBody": "={{ $json.html || '<!doctype html><meta charset=utf-8><p>Formulário indisponível. Tente de novo em alguns minutos.</p>' }}",
+          "options": {
+            "responseCode": "={{ $json.status || 503 }}",
+            "responseHeaders": {
+              "entries": [
+                {
+                  "name": "Content-Type",
+                  "value": "text/html; charset=utf-8"
+                },
+                {
+                  "name": "Cache-Control",
+                  "value": "no-store"
+                },
+                {
+                  "name": "X-Robots-Tag",
+                  "value": "noindex, nofollow"
+                },
+                {
+                  "name": "Referrer-Policy",
+                  "value": "no-referrer"
+                }
+              ]
+            }
+          }
+        },
+        "name": "Responder resultado",
+        "type": "n8n-nodes-base.respondToWebhook",
+        "typeVersion": 1.1,
+        "position": [
+          480,
+          240
+        ],
+        "id": "a02fbc28-5ae7-5eba-b556-df9f106d6b4d"
+      }
+    ],
+    "connections": {
+      "Abrir formulário (GET)": {
+        "main": [
+          [
+            {
+              "node": "Página",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Página": {
+        "main": [
+          [
+            {
+              "node": "Responder página",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Enviar formulário (POST)": {
+        "main": [
+          [
+            {
+              "node": "Decidir",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Decidir": {
+        "main": [
+          [
+            {
+              "node": "Responder resultado",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "settings": {
+      "executionOrder": "v1",
+      "timezone": "America/Sao_Paulo",
+      "saveManualExecutions": true,
+      "callerPolicy": "workflowsFromSameOwner"
+    }
+  }
+]

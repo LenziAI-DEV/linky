@@ -1,0 +1,11 @@
+{
+  "layout": "tese",
+  "company": {"name": "airbnb"},
+  "headline": "O diferencial | não é o modelo. | É o **contexto** | do negócio.",
+  "equation": [
+    {"title": "Modelo", "subtitle": "genérico"},
+    {"title": "Contexto", "subtitle": "do negócio"},
+    {"title": "Agente", "subtitle": "que gera valor"}
+  ],
+  "source": "TechCrunch · carta aos acionistas da Airbnb (3º tri) · 05/11/2026"
+}

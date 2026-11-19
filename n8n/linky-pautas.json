@@ -1,0 +1,221 @@
+[
+  {
+    "id": "linkyProposals",
+    "name": "[linky] Pautas (seg a sex 07:00, dom 21:00)",
+    "active": false,
+    "nodes": [
+      {
+        "parameters": {
+          "rule": {
+            "interval": [
+              {
+                "field": "cronExpression",
+                "expression": "0 7 * * 1-5"
+              },
+              {
+                "field": "cronExpression",
+                "expression": "0 21 * * 0"
+              }
+            ]
+          }
+        },
+        "name": "Horários de pautas",
+        "type": "n8n-nodes-base.scheduleTrigger",
+        "typeVersion": 1.2,
+        "position": [
+          0,
+          0
+        ],
+        "id": "5b5bf3f9-0cbf-5141-a7f6-ae4cacb6fca1"
+      },
+      {
+        "parameters": {},
+        "name": "Manual",
+        "type": "n8n-nodes-base.manualTrigger",
+        "typeVersion": 1,
+        "position": [
+          0,
+          200
+        ],
+        "id": "cccf8f2b-63e0-556b-b993-5c19a1de937f"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "http://linky-agents:8080/curate",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {
+            "response": {
+              "response": {
+                "neverError": true
+              }
+            },
+            "timeout": 600000
+          }
+        },
+        "name": "Curar pautas",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          240,
+          100
+        ],
+        "id": "d8ca9664-7756-5621-b408-bbd5d8964480",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        },
+        "onError": "continueRegularOutput"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "http://linky-agents:8080/proposal_email",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "options": {}
+        },
+        "name": "E-mail de pautas",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          480,
+          100
+        ],
+        "id": "3b742eb9-bc1e-5f12-afc5-6978c635704d",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "linkyAgentsToken",
+            "name": "linky-agents (X-Linky-Token)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "conditions": {
+            "options": {
+              "caseSensitive": true,
+              "leftValue": "",
+              "typeValidation": "strict",
+              "version": 2
+            },
+            "conditions": [
+              {
+                "id": "d948f8df-b58c-51d3-9f60-df6298b5f255",
+                "leftValue": "={{ $json.email != null }}",
+                "rightValue": "",
+                "operator": {
+                  "type": "boolean",
+                  "operation": "true",
+                  "singleValue": true
+                }
+              }
+            ],
+            "combinator": "and"
+          },
+          "options": {}
+        },
+        "name": "Tem e-mail?",
+        "type": "n8n-nodes-base.filter",
+        "typeVersion": 2.2,
+        "position": [
+          720,
+          100
+        ],
+        "id": "c9def89e-95f8-5452-9428-bbf5cb685b33"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "https://api.resend.com/emails",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ JSON.stringify({ from: 'linky-dev <linky@example.com>', to: [\"voce@example.com\"], subject: $json.email.subject, html: $json.email.html, text: $json.email.text }) }}",
+          "options": {}
+        },
+        "name": "Enviar e-mail",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          960,
+          100
+        ],
+        "id": "8ebe441a-48df-5c2e-a9d5-64bb99c4cc37",
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "RESEND_CREDENTIAL_ID",
+            "name": "Resend linky"
+          }
+        }
+      }
+    ],
+    "connections": {
+      "Horários de pautas": {
+        "main": [
+          [
+            {
+              "node": "Curar pautas",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Manual": {
+        "main": [
+          [
+            {
+              "node": "Curar pautas",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Curar pautas": {
+        "main": [
+          [
+            {
+              "node": "E-mail de pautas",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "E-mail de pautas": {
+        "main": [
+          [
+            {
+              "node": "Tem e-mail?",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Tem e-mail?": {
+        "main": [
+          [
+            {
+              "node": "Enviar e-mail",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "settings": {
+      "executionOrder": "v1",
+      "timezone": "America/Sao_Paulo",
+      "saveManualExecutions": true,
+      "callerPolicy": "workflowsFromSameOwner"
+    }
+  }
+]
